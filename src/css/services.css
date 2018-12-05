@@ -9,8 +9,7 @@
   background-color: #282828;
   color: white;
   font-size: 22px;
-  width: calc(100vw - 300px);
-  padding: 150px;
+  padding: 10%;
 }
 
 .services-container > main > section {
@@ -20,10 +19,14 @@
   margin-top: 25px;
 }
 
-.services-container > main > section > span {
-  min-width: 450px;
-  height: 300px;
+.services-container > main > section > img {
+  width: 50%;
+  height: 45%;
   background-size: cover;
+}
+
+.services-container > main > section > div {
+  margin-right: 5%;
 }
 
 .services-container > main > section > div > p {
@@ -35,14 +38,4 @@
 .services-container > main > section > div > ul {
   list-style-type: circle;
   font-weight: 300;
-}
-
-.services-photo-one {
-  background-image: url("../images/splash3.jpg");
-  margin-right: 2%;
-}
-
-.services-photo-two {
-  background-image: url("../images/splash5.jpg");
-  margin-right: 2%;
 }

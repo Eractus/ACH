@@ -7,8 +7,7 @@
 }
 
 .splash-photostream-images {
-  height: calc(100vh + 120px);
-  width: 100vw;
+  height: 100vh;
   position: relative;
 }
 
@@ -71,18 +70,18 @@
 .splash-about-us {
   background-color: #282828;
   color: white;
-  padding: 150px;
+  padding: 10%;
   letter-spacing: 1px;
 }
 
 .splash-about-us > article {
   display: flex;
   justify-content: space-between;
-  width: calc(100vw - 300px);
+  align-items: center;
 }
 
 .splash-about-us-text {
-  width: 50%;
+  margin-right: 10%;
 }
 
 .splash-about-us-text > p:first-child {
@@ -96,15 +95,13 @@
   font-size: 22px;
 }
 
-.splash-about-us > article > span {
-  min-width: 275px;
-  height: 412px;
-  background-image: url("../images/splash7.jpg");
-  background-size: cover;
+.splash-about-us > article > img {
+  width: 25%;
+  height: 25%;
 }
 
 .splash-services {
-  padding: 200px;
+  padding: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,6 +111,7 @@
 
 .splash-services > p {
   color: white;
+  text-align: center;
   text-shadow: 2px 2px 4px lightblue;
   margin-top: 0px;
   font-size: 50px;
@@ -122,7 +120,7 @@
 }
 
 .splash-gallery {
-  padding: 75px 150px;
+  padding: 8% 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,31 +130,13 @@
 .splash-gallery-photos {
   display: flex;
   flex-wrap: wrap;
+  width: 70%;
 }
 
-.splash-gallery-photos > li {
-  width: 300px;
-  height: 200px;
-  background-size: cover;
-  list-style-type: none;
-  margin-right: 25px;
-  margin-bottom: 25px;
-}
-
-.splash-gallery-photos li:nth-child(1) {
-  background-image: url("../images/splash1.jpg");
-}
-
-.splash-gallery-photos li:nth-child(2) {
-  background-image: url("../images/splash2.jpg");
-}
-
-.splash-gallery-photos li:nth-child(3) {
-  background-image: url("../images/splash3.jpg");
-}
-
-.splash-gallery-photos li:nth-child(4) {
-  background-image: url("../images/splash4.jpg");
+.splash-gallery-photos > img {
+  width: 40%;
+  height: 35%;
+  margin: 2.5%;
 }
 
 .splash-gallery-text {
@@ -174,7 +154,7 @@
 }
 
 .splash-reviews {
-  padding: 100px;
+  padding: 8%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -188,10 +168,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   z-index: 2;
 }
 
 .splash-reviews-text > h3 {
+  margin-top: 0;
   font-size: 50px;
   font-weight: 500;
   text-shadow: 2px 2px 4px lightblue;
@@ -248,8 +230,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 5;
   display: flex;
@@ -259,16 +241,16 @@
 
 .photo-image-popup {
   position: relative;
-  height: 75vh;
-  max-width: auto;
+  max-height: 75%;
+  max-width: 57%;
   border: 15px solid white;
   border-radius: 5px;
 }
 
 .photo-image-popup > img {
-  object-fit: contain;
+  object-fit: cover;
   height: 100%;
-  width: auto;
+  width: 100%;
 
 }
 

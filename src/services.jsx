@@ -22,7 +22,7 @@ class Services extends React.Component {
                 <li>Beard Trims</li>
               </ul>
             </div>
-            <span className="services-photo-one"></span>
+            <img src="./images/splash3.jpg"/>
           </section>
           <section>
             <div>
@@ -33,7 +33,7 @@ class Services extends React.Component {
                 <li>Grey Coverage</li>
               </ul>
             </div>
-            <span className="services-photo-two"></span>
+            <img src="./images/splash5.jpg"/>
           </section>
         </main>
       </div>

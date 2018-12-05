@@ -1,7 +1,8 @@
 .header {
   background-image: url("../images/header.png");
-  height: 450px;
-  width: 100vw;
+  background-size: 100% 150%;
+  height: 60vh;
+  width: 100%;
   display: flex;
   position: relative;
   border-bottom: 1px solid lightblue;
@@ -19,6 +20,7 @@
 
 .about-container {
   font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
+  width: 100vw;
   flex: 1 0 auto;
 }
 
@@ -28,8 +30,7 @@
   background-color: #282828;
   color: white;
   font-size: 22px;
-  width: calc(100vw - 200px);
-  padding: 100px;
+  padding: 8%;
 }
 
 .about-container > main > section {
@@ -39,10 +40,11 @@
   margin-top: 25px;
 }
 
-.about-container > main > section > span {
-  min-width: 450px;
-  height: 300px;
+.about-container > main > section > img {
+  width: 40%;
+  height: 35%;
   background-size: cover;
+  margin-right: 2%;
 }
 
 .about-section-one > div {
@@ -51,21 +53,11 @@
 
 .about-section-one > div > h3 {
   color: lightblue;
-  margin-top: 0;
+  margin: 0;
   font-size: 45px;
-}
-
-.about-photo-one {
-  background-image: url("../images/splash2.jpg");
-  margin-right: 2%;
 }
 
 .about-section-two > p {
   width: 50%;
   margin-top: 0;
-}
-
-.about-photo-two {
-  background-image: url("../images/splash4.jpg");
-  margin-right: 2%;
 }

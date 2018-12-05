@@ -8,14 +8,13 @@
   flex-direction: column;
   background-color: #282828;
   color: white;
-  width: calc(100vw - 300px);
-  padding: 50px 150px;
+  padding: 5% 10%;
+  text-align: center;
 }
 
 .reviews-container > main > section {
   display: flex;
   flex-direction: column;
-  text-align: center;
   width: inherit;
   margin-top: 25px;
 }

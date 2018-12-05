@@ -8,11 +8,9 @@
   background-color: white;
 }
 
-.footer-container > span {
-  background-image: url("../images/ACH-font-logo.png");
-  background-size: cover;
-  height: 30px;
-  width: 500px;
+.footer-container > img {
+  width: 350px;
+  height: 20px;
   margin-bottom: 10px;
 }
 

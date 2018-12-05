@@ -7,8 +7,6 @@ import Services from "./services";
 import Gallery from "./gallery";
 import Reviews from "./reviews";
 import Footer from "./footer";
-// import logo from './logo.svg';
-// import './App.css';
 
 class App extends Component {
   render() {
