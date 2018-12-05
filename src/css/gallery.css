@@ -1,0 +1,34 @@
+.gallery-container {
+  font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
+  flex: 1 0 auto;
+}
+
+.gallery-container > main {
+  background-color: #282828;
+  width: 100vw;
+}
+
+.gallery-photos-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-photo-item-container {
+  list-style-type: none;
+  width: 25%;
+  height: 400px;
+}
+
+.gallery-photo-item-container > div {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-photo-image {
+  cursor: pointer;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

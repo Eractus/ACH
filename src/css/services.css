@@ -1,0 +1,48 @@
+.services-container {
+  font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
+  flex: 1 0 auto;
+}
+
+.services-container > main {
+  display: flex;
+  flex-direction: column;
+  background-color: #282828;
+  color: white;
+  font-size: 22px;
+  width: calc(100vw - 300px);
+  padding: 150px;
+}
+
+.services-container > main > section {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  margin-top: 25px;
+}
+
+.services-container > main > section > span {
+  min-width: 450px;
+  height: 300px;
+  background-size: cover;
+}
+
+.services-container > main > section > div > p {
+  color: lightblue;
+  margin-top: 0;
+  font-size: 25px;
+}
+
+.services-container > main > section > div > ul {
+  list-style-type: circle;
+  font-weight: 300;
+}
+
+.services-photo-one {
+  background-image: url("../images/splash3.jpg");
+  margin-right: 2%;
+}
+
+.services-photo-two {
+  background-image: url("../images/splash5.jpg");
+  margin-right: 2%;
+}

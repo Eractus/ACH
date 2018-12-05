@@ -1,0 +1,53 @@
+.reviews-container {
+  font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
+  flex: 1 0 auto;
+}
+
+.reviews-container > main {
+  display: flex;
+  flex-direction: column;
+  background-color: #282828;
+  color: white;
+  width: calc(100vw - 300px);
+  padding: 50px 150px;
+}
+
+.reviews-container > main > section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: inherit;
+  margin-top: 25px;
+}
+
+.reviews-container > main > section > div > h3 {
+  color: lightblue;
+  margin-top: 0;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.reviews-container > main > section > div > ul {
+  list-style-type: none;
+  margin-top: 10%;
+}
+
+.reviews-container > main > section > div > ul > li{
+  margin-bottom: 5%;
+}
+
+.reviews-container > main > section > div > ul > li:last-child{
+  margin-bottom: 0;
+}
+
+.reviews-container > main > section > div > ul > li > h5 {
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.reviews-container > main > section > div > ul > li > p {
+  font-size: 18px;
+  font-weight: 200;
+  color: lightblue;
+}

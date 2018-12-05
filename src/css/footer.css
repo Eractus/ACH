@@ -1,0 +1,22 @@
+.footer-container {
+  font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid lightblue;
+  padding: 10px;
+  background-color: white;
+}
+
+.footer-container > span {
+  background-image: url("../images/ACH-font-logo.png");
+  background-size: cover;
+  height: 30px;
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.footer-container > p {
+  font-size: 16px;
+  margin: 0px;
+}

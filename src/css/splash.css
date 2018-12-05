@@ -1,0 +1,284 @@
+.splash-container {
+  font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
+}
+
+.splash-photostream {
+  position: relative;
+}
+
+.splash-photostream-images {
+  height: calc(100vh + 120px);
+  width: 100vw;
+  position: relative;
+}
+
+@keyframes slides {
+  0%   { opacity: 0; }
+  11.11%   { opacity: 1; }
+  33.33%  { opacity: 1; }
+  44.44%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.splash-photostream-images > span {
+  opacity: 0;
+  animation-name: slides;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.splash-photostream-images span:nth-child(1) {
+  animation-delay: 0s;
+  background-image: url("../images/splash1.jpg");
+  background-size: 100% 100%;
+}
+
+.splash-photostream-images span:nth-child(2) {
+  animation-delay: 5s;
+  background-image: url("../images/splash2.jpg");
+  background-size: 100% 100%;
+}
+
+.splash-photostream-images span:nth-child(3) {
+  animation-delay: 10s;
+  background-image: url("../images/splash3.jpg");
+  background-size: 100% 100%;
+}
+
+.splash-photostream-images span:nth-child(4) {
+  animation-delay: 15s;
+  background-image: url("../images/splash4.jpg");
+  background-size: 100% 100%;
+}
+
+.splash-photostream-images span:nth-child(5) {
+  animation-delay: 20s;
+  background-image: url("../images/splash5.jpg");
+  background-size: 100% 100%;
+}
+
+.splash-photostream-images span:nth-child(6) {
+  animation-delay: 20s;
+  background-image: url("../images/splash6.jpg");
+  background-size: 100% 100%;
+}
+
+.splash-about-us {
+  background-color: #282828;
+  color: white;
+  padding: 150px;
+  letter-spacing: 1px;
+}
+
+.splash-about-us > article {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100vw - 300px);
+}
+
+.splash-about-us-text {
+  width: 50%;
+}
+
+.splash-about-us-text > p:first-child {
+  margin-top: 0px;
+  font-size: 50px;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px lightblue;
+}
+
+.splash-about-us-text > p {
+  font-size: 22px;
+}
+
+.splash-about-us > article > span {
+  min-width: 275px;
+  height: 412px;
+  background-image: url("../images/splash7.jpg");
+  background-size: cover;
+}
+
+.splash-services {
+  padding: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/splash8.jpg");
+  background-size: cover;
+}
+
+.splash-services > p {
+  color: white;
+  text-shadow: 2px 2px 4px lightblue;
+  margin-top: 0px;
+  font-size: 50px;
+  font-weight: 500;
+  z-index: 2;
+}
+
+.splash-gallery {
+  padding: 75px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282828;
+}
+
+.splash-gallery-photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.splash-gallery-photos > li {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  list-style-type: none;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+.splash-gallery-photos li:nth-child(1) {
+  background-image: url("../images/splash1.jpg");
+}
+
+.splash-gallery-photos li:nth-child(2) {
+  background-image: url("../images/splash2.jpg");
+}
+
+.splash-gallery-photos li:nth-child(3) {
+  background-image: url("../images/splash3.jpg");
+}
+
+.splash-gallery-photos li:nth-child(4) {
+  background-image: url("../images/splash4.jpg");
+}
+
+.splash-gallery-text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.splash-gallery-text > p {
+  color: white;
+  text-shadow: 2px 2px 4px lightblue;
+  margin-top: 0px;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.splash-reviews {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/splash9.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.splash-reviews-text {
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.splash-reviews-text > h3 {
+  font-size: 50px;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px lightblue;
+}
+
+.splash-reviews-text > h5 {
+  font-size: 28px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.splash-reviews-text > p {
+  font-size: 18px;
+  font-weight: 200;
+  color: lightblue;
+}
+
+.splash-button {
+  z-index: 2;
+}
+
+.splash-button > button {
+  font-size: 20px;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-weight: 200;
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+.splash-button > button:hover {
+  color: lightblue;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.darken-overlay {
+  position: relative;
+}
+
+.darken-overlay:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-image-popup {
+  position: relative;
+  height: 75vh;
+  max-width: auto;
+  border: 15px solid white;
+  border-radius: 5px;
+}
+
+.photo-image-popup > img {
+  object-fit: contain;
+  height: 100%;
+  width: auto;
+
+}
+
+.photo-image-popup > span {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/close.png");
+  background-size: cover;
+  cursor: pointer;
+}
