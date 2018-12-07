@@ -1,5 +1,10 @@
+body {
+  margin: 0px;
+}
+
 .splash-container {
   font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
+  margin-top: 170px;
 }
 
 .splash-photostream {
