@@ -441,29 +441,3 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.photo-image-popup {
-  position: relative;
-  max-height: 75%;
-  max-width: 57%;
-  border: 15px solid white;
-  border-radius: 5px;
-}
-
-.photo-image-popup > img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-
-}
-
-.photo-image-popup > span {
-  position: absolute;
-  top: -25px;
-  right: -25px;
-  width: 25px;
-  height: 25px;
-  background-image: url("../images/close.png");
-  background-size: cover;
-  cursor: pointer;
-}

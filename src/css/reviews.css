@@ -1,52 +1,109 @@
-.reviews-container {
-  font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
-  flex: 1 0 auto;
+@media only screen and (max-width: 992px) {
+  .reviews-container {
+    font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
+    flex: 1 0 auto;
+  }
+
+  .reviews-container > main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #282828;
+    color: white;
+    padding: 5% 10%;
+    text-align: center;
+  }
+
+  .reviews-container > main > section {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    margin-top: 25px;
+  }
+
+  .reviews-container > main > section > div > h3 {
+    color: #CFB53B;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .reviews-list {
+    margin-top: 10%;
+  }
+
+  .reviews-list > div {
+    margin-bottom: 5%;
+  }
+
+  .reviews-list > div:last-child {
+    margin-bottom: 0;
+  }
+
+  .reviews-list > div > h5 {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .reviews-list > div > p {
+    font-size: 14px;
+    font-weight: 200;
+    color: #CFB53B;
+  }
 }
 
-.reviews-container > main {
-  display: flex;
-  flex-direction: column;
-  background-color: #282828;
-  color: white;
-  padding: 5% 10%;
-  text-align: center;
-}
+@media only screen and (min-width: 992px) {
+  .reviews-container {
+    font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
+    flex: 1 0 auto;
+  }
 
-.reviews-container > main > section {
-  display: flex;
-  flex-direction: column;
-  width: inherit;
-  margin-top: 25px;
-}
+  .reviews-container > main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #282828;
+    color: white;
+    padding: 5% 10%;
+    text-align: center;
+  }
 
-.reviews-container > main > section > div > h3 {
-  color: lightblue;
-  margin-top: 0;
-  font-size: 28px;
-  font-weight: 500;
-}
+  .reviews-container > main > section {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    margin-top: 25px;
+  }
 
-.reviews-container > main > section > div > ul {
-  list-style-type: none;
-  margin-top: 10%;
-}
+  .reviews-container > main > section > div > h3 {
+    color: #CFB53B;
+    margin-top: 0;
+    font-size: 28px;
+    font-weight: 500;
+  }
 
-.reviews-container > main > section > div > ul > li{
-  margin-bottom: 5%;
-}
+  .reviews-list {
+    margin-top: 10%;
+  }
 
-.reviews-container > main > section > div > ul > li:last-child{
-  margin-bottom: 0;
-}
+  .reviews-list > div {
+    margin-bottom: 5%;
+  }
 
-.reviews-container > main > section > div > ul > li > h5 {
-  font-size: 22px;
-  font-weight: 400;
-  font-style: italic;
-}
+  .reviews-list > div:last-child {
+    margin-bottom: 0;
+  }
 
-.reviews-container > main > section > div > ul > li > p {
-  font-size: 18px;
-  font-weight: 200;
-  color: lightblue;
+  .reviews-list > div > h5 {
+    font-size: 22px;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .reviews-list > div > p {
+    font-size: 18px;
+    font-weight: 200;
+    color: #CFB53B;
+  }
 }

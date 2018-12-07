@@ -15,28 +15,28 @@ class Reviews extends React.Component {
           <section>
             <div>
               <h3>If we rocked your hair world, tag our stylist and share your photo and experience on Instagram!</h3>
-              <ul>
-                <li>
+              <div className="reviews-list">
+                <div>
                   <h5>"Kefka is the man! 5/5 stars!!!"</h5>
                   <p>-Ameer A.</p>
-                </li>
-                <li>
+                </div>
+                <div>
                   <h5>"The ACH team has winning members. Highly recommended!"</h5>
                   <p>-Jon W.</p>
-                </li>
-                <li>
+                </div>
+                <div>
                   <h5>"I went in a mess, and Sephiroth cleaned me right up. Couldn't be happier!"</h5>
                   <p>-Cloud S.</p>
-                </li>
-                <li>
+                </div>
+                <div>
                   <h5>"Misty was a professional from beginning to end, ask for her. You won't regret it."</h5>
                   <p>-Ash K.</p>
-                </li>
-                <li>
+                </div>
+                <div>
                   <h5>"Showed Kefka what I wanted, and he quite literally cloned it above my hairline."</h5>
                   <p>-Kevin M.</p>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </section>
         </main>

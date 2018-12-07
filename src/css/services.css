@@ -1,41 +1,88 @@
-.services-container {
-  font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
-  flex: 1 0 auto;
+@media only screen and (max-width: 992px) {
+  .services-container {
+    font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
+    flex: 1 0 auto;
+  }
+
+  .services-container > main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #282828;
+    color: white;
+    font-size: 22px;
+    padding: 4%;
+    width: 92%;
+  }
+
+  .services-container > main > section {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+  }
+
+  .services-container > main > section > img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+
+  .services-container > main > section > div {
+    margin-right: 5%;
+  }
+
+  .services-container > main > section > div > p {
+    color: lightblue;
+    margin-top: 0;
+    font-size: 25px;
+  }
+
+  .services-container > main > section > div > ul {
+    list-style-type: circle;
+    font-weight: 300;
+  }
 }
 
-.services-container > main {
-  display: flex;
-  flex-direction: column;
-  background-color: #282828;
-  color: white;
-  font-size: 22px;
-  padding: 10%;
-}
+@media only screen and (min-width: 992px) {
+  .services-container {
+    font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
+    flex: 1 0 auto;
+  }
 
-.services-container > main > section {
-  display: flex;
-  justify-content: space-between;
-  width: inherit;
-  margin-top: 25px;
-}
+  .services-container > main {
+    display: flex;
+    flex-direction: column;
+    background-color: #282828;
+    color: white;
+    font-size: 22px;
+    padding: 10%;
+  }
 
-.services-container > main > section > img {
-  width: 50%;
-  height: 45%;
-  background-size: cover;
-}
+  .services-container > main > section {
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    margin-top: 25px;
+  }
 
-.services-container > main > section > div {
-  margin-right: 5%;
-}
+  .services-container > main > section > img {
+    width: 50%;
+    height: 45%;
+    background-size: cover;
+  }
 
-.services-container > main > section > div > p {
-  color: lightblue;
-  margin-top: 0;
-  font-size: 25px;
-}
+  .services-container > main > section > div {
+    margin-right: 5%;
+  }
 
-.services-container > main > section > div > ul {
-  list-style-type: circle;
-  font-weight: 300;
+  .services-container > main > section > div > p {
+    color: lightblue;
+    margin-top: 0;
+    font-size: 25px;
+  }
+
+  .services-container > main > section > div > ul {
+    list-style-type: circle;
+    font-weight: 300;
+  }
 }
