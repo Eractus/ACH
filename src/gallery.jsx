@@ -1,5 +1,5 @@
 import React from "react";
-import GalleryPhoto from "./galleryPhoto";
+import Photo from "./photo";
 
 class Gallery extends React.Component {
   componentDidMount() {
@@ -23,7 +23,7 @@ class Gallery extends React.Component {
 
     photoURLs.forEach((photoURL, index) => {
       photos.push(
-        <GalleryPhoto
+        <Photo
           key={index}
           photo={photoURL}
         />
@@ -36,9 +36,9 @@ class Gallery extends React.Component {
           <p>GALLERY</p>
         </header>
         <main>
-          <ul className="gallery-photos-list">
+          <div className="gallery-photos-list">
             {photos}
-          </ul>
+          </div>
         </main>
       </div>
     )

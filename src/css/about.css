@@ -68,13 +68,13 @@
     margin-top: 25px;
   }
 
-  .about-container > main > section > img {
+  .about-container > main > section > div {
     width: 100%;
     height: auto;
     background-size: cover;
   }
 
-  .about-section-one > div > h3 {
+  .about-section-one > span > h3 {
     color: #CFB53B;;
     margin: 0;
     font-size: 45px;
@@ -109,18 +109,18 @@
     margin-top: 25px;
   }
 
-  .about-container > main > section > img {
+  .about-container > main > section > div {
     width: 40%;
     height: 35%;
     background-size: cover;
     margin-right: 2%;
   }
 
-  .about-section-one > div {
+  .about-section-one > span {
     width: 50%;
   }
 
-  .about-section-one > div > h3 {
+  .about-section-one > span > h3 {
     color: #CFB53B;;
     margin: 0;
     font-size: 45px;

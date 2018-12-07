@@ -99,8 +99,8 @@
 
   .photo-image-popup {
     position: relative;
-    height: auto;
-    width: 68%;
+    height: 75%;
+    width: auto;
     border: 15px solid white;
     border-radius: 5px;
   }
@@ -108,7 +108,7 @@
   .photo-image-popup > img {
     object-fit: cover;
     height: 100%;
-    width: 100%;
+    width: auto;
 
   }
 

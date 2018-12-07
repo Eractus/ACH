@@ -22,23 +22,23 @@
     margin-bottom: 5%;
   }
 
-  .services-container > main > section > img {
+  .services-container > main > section > div {
     width: 100%;
     height: auto;
     background-size: cover;
   }
 
-  .services-container > main > section > div {
+  .services-container > main > section > span {
     margin-right: 5%;
   }
 
-  .services-container > main > section > div > p {
+  .services-container > main > section > span > p {
     color: lightblue;
     margin-top: 0;
     font-size: 25px;
   }
 
-  .services-container > main > section > div > ul {
+  .services-container > main > section > span > ul {
     list-style-type: circle;
     font-weight: 300;
   }
@@ -66,23 +66,23 @@
     margin-top: 25px;
   }
 
-  .services-container > main > section > img {
+  .services-container > main > section > div {
     width: 50%;
     height: 45%;
     background-size: cover;
   }
 
-  .services-container > main > section > div {
+  .services-container > main > section > span {
     margin-right: 5%;
   }
 
-  .services-container > main > section > div > p {
+  .services-container > main > section > span > p {
     color: lightblue;
     margin-top: 0;
     font-size: 25px;
   }
 
-  .services-container > main > section > div > ul {
+  .services-container > main > section > span > ul {
     list-style-type: circle;
     font-weight: 300;
   }

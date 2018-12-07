@@ -1,4 +1,5 @@
 import React from "react";
+import Photo from "./photo";
 
 class Services extends React.Component {
   componentDidMount() {
@@ -13,7 +14,7 @@ class Services extends React.Component {
         </header>
         <main>
           <section>
-            <div>
+            <span>
               <p>We Specialize In:</p>
               <ul>
                 <li>Male and Female Haircut</li>
@@ -21,19 +22,19 @@ class Services extends React.Component {
                 <li>Shaves</li>
                 <li>Beard Trims</li>
               </ul>
-            </div>
-            <img src="./images/splash3.jpg"/>
+            </span>
+            <Photo photo="./images/splash3.jpg" />
           </section>
           <section>
-            <div>
+            <span>
               <p>Our Color Services Include:</p>
               <ul>
                 <li>Hair Coloring</li>
                 <li>Highlights</li>
                 <li>Grey Coverage</li>
               </ul>
-            </div>
-            <img src="./images/splash5.jpg"/>
+            </span>
+            <Photo photo="./images/splash5.jpg" />
           </section>
         </main>
       </div>

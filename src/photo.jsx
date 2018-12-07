@@ -1,6 +1,6 @@
 import React from "react";
 
-class GalleryPhoto extends React.Component {
+class Photo extends React.Component {
   constructor(props) {
     super(props)
     this.state = { displayPhoto: false }
@@ -27,16 +27,16 @@ class GalleryPhoto extends React.Component {
     </div> : "";
 
     return (
-      <li className="gallery-photo-item-container">
+      <div className="gallery-photo-item-container">
         {photoPopup}
         <div>
           <span>
             <img onClick={this.openPhotoPopup} className="gallery-photo-image" alt="Preview" src={this.props.photo} />
           </span>
         </div>
-      </li>
+      </div>
     );
   }
 }
 
-export default GalleryPhoto;
+export default Photo;

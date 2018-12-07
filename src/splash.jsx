@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Photo from "./photo";
 
 class Splash extends React.Component {
   componentDidMount() {
@@ -21,13 +22,13 @@ class Splash extends React.Component {
         </section>
         <section className="splash-about-us">
           <article>
-            <div className="splash-about-us-text">
+            <span className="splash-about-us-text">
               <p>What Inspires Us</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <Link className="splash-button" to="/about"><button>Learn More</button></Link>
-            </div>
-            <img src="./images/splash7.jpg" />
+            </span>
+            <Photo photo="./images/splash7.jpg" />
           </article>
         </section>
         <section className="splash-services darken-overlay">
@@ -36,10 +37,10 @@ class Splash extends React.Component {
         </section>
         <section className="splash-gallery">
           <div className="splash-gallery-photos">
-            <img src="./images/splash1.jpg" />
-            <img src="./images/splash2.jpg" />
-            <img src="./images/splash3.jpg" />
-            <img src="./images/splash4.jpg" />
+            <Photo photo="./images/splash1.jpg" />
+            <Photo photo="./images/splash2.jpg" />
+            <Photo photo="./images/splash3.jpg" />
+            <Photo photo="./images/splash4.jpg" />
           </div>
           <div className="splash-gallery-text">
             <p>Take a Glimpse Inside Our Lab</p>
