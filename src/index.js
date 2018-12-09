@@ -2,13 +2,14 @@ import React from 'react';
 import { HashRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 
-import './css/about.css';
-import './css/footer.css';
-import './css/gallery.css';
 import './css/navbar.css';
-import './css/reviews.css';
-import './css/services.css';
 import './css/splash.css';
+import './css/about.css';
+import './css/services.css';
+import './css/gallery.css';
+import './css/photo.css';
+import './css/reviews.css';
+import './css/footer.css';
 
 import App from './App';
 // import * as serviceWorker from './serviceWorker';
