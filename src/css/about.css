@@ -2,7 +2,8 @@
 @media only screen and (max-width: 600px) {
   .header {
     background-image: url("../images/header.png");
-    background-size: 100% 150%;
+    background-size: cover;
+    background-position: 50% 50%;
     height: 150px;
     width: 100%;
     display: flex;
@@ -25,7 +26,8 @@
 @media only screen and (min-width: 600px) {
   .header {
     background-image: url("../images/header.png");
-    background-size: 100% 150%;
+    background-size: cover;
+    background-position: 50% 50%;
     height: 250px;
     width: 100%;
     display: flex;
@@ -48,12 +50,14 @@
 @media only screen and (min-width: 992px) {
   .header {
     background-image: url("../images/header.png");
-    background-size: 100% 150%;
-    height: 450px;
-    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 350px;
+    width: 100vw;
     display: flex;
     position: relative;
     border-bottom: 1px solid #CFB53B;;
+    background-attachment: fixed;
   }
 
   .header > p {
@@ -113,6 +117,7 @@
   .about-container {
     font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
     width: 100vw;
+    margin-top: 170px;
     flex: 1 0 auto;
   }
 
