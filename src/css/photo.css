@@ -9,8 +9,8 @@
   .photo-image-popup > img {
     width: auto;
     height: auto;
-    max-width: 85vw;
-    max-height: 85vh;
+    max-width: 75vw;
+    max-height: 75vh;
     border: 15px solid white;
     border-radius: 5px;
   }
@@ -38,8 +38,8 @@
   .photo-image-popup > img {
     width: auto;
     height: auto;
-    max-width: 85vw;
-    max-height: 85vh;
+    max-width: 75vw;
+    max-height: 75vh;
     border: 15px solid white;
     border-radius: 5px;
   }
