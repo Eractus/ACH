@@ -30,6 +30,10 @@ class Navbar extends React.Component {
   }
 
   render() {
+    const menuIcon = (this.state.toggled) ?
+      <img onClick={this.toggleLinks} className="navbar-menu-icon" src="./images/collapse.png" /> :
+      <img onClick={this.toggleLinks} className="navbar-menu-icon" src="./images/hamburger.png" />
+
     return (
       <nav className="navbar-container">
         <Link className="navbar-logo" to="/">
@@ -43,7 +47,7 @@ class Navbar extends React.Component {
           <Link onClick={this.collapseLinks} to="/reviews">REVIEWS</Link>
         </div>
         <p className="navbar-contact-number">714-679-4908</p>
-        <img onClick={this.toggleLinks} className="navbar-menu-icon" src="./images/hamburger.png" />
+        {menuIcon}
       </nav>
     )
   }
