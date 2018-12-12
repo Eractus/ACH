@@ -26,6 +26,7 @@
     width: 100%;
     height: auto;
     background-size: cover;
+    overflow: hidden;
   }
 
   .services-container > main > section > span {
@@ -71,6 +72,7 @@
     width: 50%;
     height: 45%;
     background-size: cover;
+    overflow: hidden;
   }
 
   .services-container > main > section > span {

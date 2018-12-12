@@ -99,6 +99,7 @@
     width: 100%;
     height: auto;
     background-size: cover;
+    overflow: hidden;
   }
 
   .about-section-one > span > h3 {
@@ -142,6 +143,7 @@
     height: 35%;
     background-size: cover;
     margin-right: 2%;
+    overflow: hidden;
   }
 
   .about-section-one > span {
