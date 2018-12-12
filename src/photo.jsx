@@ -11,10 +11,12 @@ class Photo extends React.Component {
 
   openPhotoPopup() {
     this.setState({ displayPhoto: true });
+    document.body.style.overflow = "hidden";
   }
 
   closePhotoPopup() {
     this.setState({ displayPhoto: false });
+    document.body.style.overflow = "auto";
   }
 
   render() {
