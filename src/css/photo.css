@@ -1,57 +1,64 @@
-@media only screen and (max-width: 600px) {
-  .photo-image-popup {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .photo-image-popup > img {
-    width: auto;
-    height: auto;
-    max-width: 75vw;
-    max-height: 75vh;
-    border: 15px solid white;
-    border-radius: 5px;
-  }
-
-  .photo-image-popup > span {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 20px;
-    height: 20px;
-    background-image: url("../images/close.png");
-    background-size: cover;
-    cursor: pointer;
-  }
+.photo-image-popup {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media only screen and (min-width: 600px) {
-  .photo-image-popup {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.photo-image-popup > img {
+  width: auto;
+  height: auto;
+  max-width: 75vw;
+  max-height: 75vh;
+  border: 15px solid white;
+  border-radius: 5px;
+}
 
-  .photo-image-popup > img {
-    width: auto;
-    height: auto;
-    max-width: 75vw;
-    max-height: 75vh;
-    border: 15px solid white;
-    border-radius: 5px;
-  }
+.photo-image-popup > span {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/close.png");
+  background-size: cover;
+  cursor: pointer;
+}
 
-  .photo-image-popup > span {
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    width: 25px;
-    height: 25px;
-    background-image: url("../images/close.png");
-    background-size: cover;
-    cursor: pointer;
-  }
+.photo-image {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform .8s;
+}
+
+.photo-image:hover {
+  transform: scale(1.18);
+}
+
+.photo-image:hover:hover .photo-overlay {
+  visibility: visible;
+  z-index: 5;
+}
+
+.photo-overlay {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.photo-image > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }

@@ -27,13 +27,12 @@ class Photo extends React.Component {
     </div> : "";
 
     return (
-      <div className="gallery-photo-item-container">
+      <div>
         {photoPopup}
-        <div>
-          <span>
-            <img onClick={this.openPhotoPopup} className="gallery-photo-image" alt="Preview" src={this.props.photo} />
-          </span>
-        </div>
+        <span onClick={this.openPhotoPopup} className="photo-image">
+          <div className="photo-overlay"></div>
+          <img alt="Preview" src={this.props.photo} />
+        </span>
       </div>
     );
   }

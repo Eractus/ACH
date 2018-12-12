@@ -119,7 +119,7 @@ body {
     margin: 0px;
     font-size: 30px;
     font-weight: 500;
-    text-shadow: 2px 2px 4px #CFB53B;
+    text-shadow: 2px 2px 4px #FFDF00;
   }
 
   .splash-about-us-text > p {
@@ -127,8 +127,9 @@ body {
   }
 
   .splash-about-us > article > div {
-    width: 35%;
+    width: auto;
     height: auto;
+    overflow: hidden;
   }
 
   .splash-services {
@@ -143,7 +144,7 @@ body {
   .splash-services > p {
     color: white;
     text-align: center;
-    text-shadow: 2px 2px 4px #CFB53B;
+    text-shadow: 2px 2px 4px #FFDF00;
     margin-top: 0px;
     font-size: 30px;
     font-weight: 500;
@@ -167,6 +168,7 @@ body {
     width: 40%;
     height: 35%;
     margin: 1%;
+    overflow: hidden;
   }
 
   .splash-gallery-text {
@@ -177,7 +179,7 @@ body {
 
   .splash-gallery-text > p {
     color: white;
-    text-shadow: 2px 2px 4px #CFB53B;
+    text-shadow: 2px 2px 4px #FFDF00;
     margin-bottom: 3%;
     font-size: 30px;
     font-weight: 500;
@@ -206,7 +208,7 @@ body {
     margin-top: 0;
     font-size: 30px;
     font-weight: 500;
-    text-shadow: 2px 2px 4px #CFB53B;
+    text-shadow: 2px 2px 4px #FFDF00;
   }
 
   .splash-reviews-text > h5 {
@@ -218,7 +220,7 @@ body {
   .splash-reviews-text > p {
     font-size: 14px;
     font-weight: 200;
-    color: #CFB53B;
+    color: #FFDF00;
   }
 }
 
@@ -313,7 +315,7 @@ body {
     margin: 0px;
     font-size: 50px;
     font-weight: 500;
-    text-shadow: 2px 2px 4px #CFB53B;
+    text-shadow: 2px 2px 4px #FFDF00;
   }
 
   .splash-about-us-text > p {
@@ -321,8 +323,9 @@ body {
   }
 
   .splash-about-us > article > div {
-    width: 100%;
+    width: auto;
     height: auto;
+    overflow: hidden;
   }
 
   .splash-services {
@@ -338,7 +341,7 @@ body {
   .splash-services > p {
     color: white;
     text-align: center;
-    text-shadow: 2px 2px 4px #CFB53B;
+    text-shadow: 2px 2px 4px #FFDF00;
     margin-top: 0px;
     font-size: 50px;
     font-weight: 500;
@@ -365,6 +368,7 @@ body {
     width: 48%;
     height: 50%;
     margin: 1%;
+    overflow: hidden;
   }
 
   .splash-gallery-text {
@@ -375,7 +379,7 @@ body {
 
   .splash-gallery-text > p {
     color: white;
-    text-shadow: 2px 2px 4px #CFB53B;
+    text-shadow: 2px 2px 4px #FFDF00;
     margin-top: 0px;
     font-size: 50px;
     font-weight: 500;
@@ -405,7 +409,7 @@ body {
     margin-top: 0;
     font-size: 50px;
     font-weight: 500;
-    text-shadow: 2px 2px 4px #CFB53B;
+    text-shadow: 2px 2px 4px #FFDF00;
   }
 
   .splash-reviews-text > h5 {
@@ -417,7 +421,7 @@ body {
   .splash-reviews-text > p {
     font-size: 18px;
     font-weight: 200;
-    color: #CFB53B;
+    color: #FFDF00;
   }
 }
 
@@ -427,16 +431,16 @@ body {
 
 .splash-button > button {
   font-size: 20px;
-  color: white;
+  color: black;
   padding: 15px 20px;
   border-radius: 5px;
   font-weight: 200;
-  background-color: #CFB53B;
+  background-color: #FFDF00;
   cursor: pointer;
 }
 
 .splash-button > button:hover {
-  color: #CFB53B;
-  background-color: white;
+  color: #FFDF00;
+  background-color: black;
   border-radius: 5px;
 }

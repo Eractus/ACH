@@ -7,7 +7,7 @@ class Footer extends React.Component {
         <img src="./images/ACH-font-logo.png" />
         <p>18438 BROOKHURST STREET</p>
         <p>FOUNTAIN VALLEY, CA 92708</p>
-        <p>714-679-4908</p>
+        <p>714-706-2948</p>
       </footer>
     )
   }

@@ -46,7 +46,7 @@ class Navbar extends React.Component {
           <Link onClick={this.collapseLinks} to="/gallery">GALLERY</Link>
           <Link onClick={this.collapseLinks} to="/reviews">REVIEWS</Link>
         </div>
-        <p className="navbar-contact-number">714-679-4908</p>
+        <p className="navbar-contact-number">714-706-2948</p>
         {menuIcon}
       </nav>
     )
