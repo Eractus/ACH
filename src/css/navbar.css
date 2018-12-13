@@ -55,8 +55,8 @@
 
   .navbar-contact-number {
     margin: 0;
-    color: black;
-    background-color: #FFDF00;
+    color: white;
+    background-color: black;
     letter-spacing: 1px;
     padding: 8px;
     border-radius: 20px;
@@ -109,7 +109,7 @@
 
   .navbar-links > a {
     color: lightgrey;
-    margin-right: 30px;
+    margin: 0 15px;
     margin-top: 1%;
     text-decoration: none;
   }
@@ -120,15 +120,10 @@
   }
 
   .navbar-contact-number {
-    color: black;
-    background-color: white;
-    padding: 18px 50px;
-    border-radius: 20px;
-  }
-
-  .navbar-contact-number:hover {
     color: white;
     background-color: black;
+    padding: 18px 50px;
+    border-radius: 20px;
   }
 
   .navbar-menu-icon {

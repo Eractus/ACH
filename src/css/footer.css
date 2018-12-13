@@ -15,6 +15,29 @@
 }
 
 .footer-container > p {
-  font-size: 16px;
+  font-size: 18px;
   margin: 0px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.footer-social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.footer-social-media > a {
+  margin: 0 8px;
+}
+
+.footer-social-media > a > img {
+  width: 25px;
+  height: 25px;
+}
+
+.footer-social-media > a > img:hover {
+  background-color: #FFDF00;
+  border-radius: 50%;
 }
