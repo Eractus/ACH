@@ -6,6 +6,9 @@ class Footer extends React.Component {
       <footer className="footer-container">
         <img src="./images/ACH-font-logo.png" />
         <div className="footer-social-media">
+          <a href="https://www.facebook.com/Alchemy-Collective-Hairlab-2219094228114532/">
+            <img src="./images/facebook.png" />
+          </a>
           <a href="https://www.instagram.com/alchemycollectivehairlab/">
             <img src="./images/instagram.png" />
           </a>
