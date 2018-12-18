@@ -35,8 +35,8 @@ class Splash extends React.Component {
       this.setState({ aboutUsTop: top, aboutUsBot: bot });
     }
     if (this.state.scrollTop >= this.state.aboutUsTop && this.state.scrollTop <= this.state.aboutUsBot) {
-      aboutUsText.className = "splash-about-us-text";
-      aboutUsPhoto.className = "splash-about-us-photo";
+      aboutUsText.className = "splash-about-us-text-transitioned";
+      aboutUsPhoto.className = "splash-about-us-photo-transitioned";
     }
 
     // Gallery section transitions
@@ -49,8 +49,8 @@ class Splash extends React.Component {
       this.setState({ galleryTop: top, galleryBot: bot });
     }
     if (this.state.scrollTop >= this.state.galleryTop && this.state.scrollTop <= this.state.galleryBot) {
-      galleryText.className = "splash-gallery-text";
-      galleryPhotos.className = "splash-gallery-photos";
+      galleryText.className = "splash-gallery-text-transitioned";
+      galleryPhotos.className = "splash-gallery-photos-transitioned";
     }
   }
 
@@ -69,13 +69,13 @@ class Splash extends React.Component {
         </section>
         <section id="about-us" className="splash-about-us">
           <article>
-            <span id="about-us-text" className="splash-about-us-text-hidden">
+            <span id="about-us-text" className="splash-about-us-text">
               <p>What Inspires Us</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <Link className="splash-button" to="/about"><button>Learn More</button></Link>
             </span>
-            <div id="about-us-photo" className="splash-about-us-photo-hidden">
+            <div id="about-us-photo" className="splash-about-us-photo">
               <img src="./images/splash7.jpg" />
             </div>
           </article>
@@ -85,13 +85,13 @@ class Splash extends React.Component {
           <Link className="splash-button" to="/services"><button>Our Services</button></Link>
         </section>
         <section id="gallery" className="splash-gallery">
-          <div id="gallery-photos" className="splash-gallery-photos-hidden">
+          <div id="gallery-photos" className="splash-gallery-photos">
             <img src="./images/splash1.jpg" />
             <img src="./images/splash2.jpg" />
             <img src="./images/splash3.jpg" />
             <img src="./images/splash4.jpg" />
           </div>
-          <div id="gallery-text"className="splash-gallery-text-hidden">
+          <div id="gallery-text"className="splash-gallery-text">
             <p>Take a Glimpse Inside Our Lab</p>
             <Link className="splash-button" to="/gallery"><button>See All</button></Link>
           </div>

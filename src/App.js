@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Route, Redirect, Switch} from 'react-router-dom';
-import Navbar from "./navbar";
-import Splash from "./splash";
-import About from "./about";
-import Services from "./services";
-import Gallery from "./gallery";
-import Reviews from "./reviews";
-import Footer from "./footer";
+import Navbar from "./components/navbar";
+import Splash from "./components/splash";
+import About from "./components/about";
+import Services from "./components/services";
+import Gallery from "./components/gallery";
+import Reviews from "./components/reviews";
+import Footer from "./components/footer";
 
 class App extends Component {
   render() {

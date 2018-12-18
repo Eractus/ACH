@@ -4,7 +4,7 @@
     flex: 1 0 auto;
   }
 
-  .gallery-container > main {
+  .gallery-main-wrapper {
     background-color: #282828;
     width: 100vw;
   }
@@ -29,7 +29,7 @@
     flex: 1 0 auto;
   }
 
-  .gallery-container > main {
+  .gallery-main-wrapper {
     background-color: #282828;
     width: 100vw;
   }
@@ -55,7 +55,7 @@
     flex: 1 0 auto;
   }
 
-  .gallery-container > main {
+  .gallery-main-wrapper {
     background-color: #282828;
     width: 100vw;
   }

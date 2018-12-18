@@ -4,7 +4,7 @@
     flex: 1 0 auto;
   }
 
-  .reviews-container > main {
+  .reviews-main-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,14 +14,14 @@
     text-align: center;
   }
 
-  .reviews-container > main > section {
+  .reviews-section-wrapper {
     display: flex;
     flex-direction: column;
     width: inherit;
     margin-top: 25px;
   }
 
-  .reviews-container > main > section > div > h3 {
+  .reviews-section-wrapper > h3 {
     color: #FFDF00;
     margin-top: 0;
     font-size: 20px;
@@ -29,24 +29,27 @@
   }
 
   .reviews-list {
+    padding-left: 0px;
+    list-style: none;
+    margin-bottom: 0px;
     margin-top: 10%;
   }
 
-  .reviews-list > div {
+  .reviews-list-item {
     margin-bottom: 5%;
   }
 
-  .reviews-list > div:last-child {
+  .reviews-list-item:last-child {
     margin-bottom: 0;
   }
 
-  .reviews-list > div > h5 {
+  .reviews-list-item > h5 {
     font-size: 18px;
     font-weight: 400;
     font-style: italic;
   }
 
-  .reviews-list > div > p {
+  .reviews-list-item > p {
     font-size: 14px;
     font-weight: 200;
     color: #FFDF00;
@@ -60,7 +63,7 @@
     flex: 1 0 auto;
   }
 
-  .reviews-container > main {
+  .reviews-main-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,39 +73,42 @@
     text-align: center;
   }
 
-  .reviews-container > main > section {
+  .reviews-section-wrapper {
     display: flex;
     flex-direction: column;
     width: inherit;
     margin-top: 25px;
   }
 
-  .reviews-container > main > section > div > h3 {
+  .reviews-section-wrapper > h3 {
     color: #FFDF00;
-    margin-top: 0;
+    margin: 0;
     font-size: 28px;
     font-weight: 500;
   }
 
   .reviews-list {
+    padding-left: 0px;
+    list-style: none;
+    margin-bottom: 0px;
     margin-top: 10%;
   }
 
-  .reviews-list > div {
+  .reviews-list-item {
     margin-bottom: 5%;
   }
 
-  .reviews-list > div:last-child {
+  .reviews-list-item:last-child {
     margin-bottom: 0;
   }
 
-  .reviews-list > div > h5 {
+  .reviews-list-item > h5 {
     font-size: 22px;
     font-weight: 400;
     font-style: italic;
   }
 
-  .reviews-list > div > p {
+  .reviews-list-item > p {
     font-size: 18px;
     font-weight: 200;
     color: #FFDF00;

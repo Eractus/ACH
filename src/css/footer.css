@@ -28,16 +28,16 @@
   margin-bottom: 5px;
 }
 
-.footer-social-media > a {
+.footer-social-media-link {
   margin: 0 8px;
 }
 
-.footer-social-media > a > img {
+.footer-social-media-link > img {
   width: 25px;
   height: 25px;
 }
 
-.footer-social-media > a > img:hover {
+.footer-social-media-link > img:hover {
   background-color: #FFDF00;
   border-radius: 50%;
 }

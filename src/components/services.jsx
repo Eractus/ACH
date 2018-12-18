@@ -12,9 +12,9 @@ class Services extends React.Component {
         <header className="header darken-overlay">
           <p>SERVICES</p>
         </header>
-        <main>
-          <section>
-            <span>
+        <main className="services-main-wrapper">
+          <section className="services-sections-wrapper">
+            <span className="services-text-wrapper">
               <p>We Specialize In:</p>
               <ul>
                 <li>Male and Female Haircut</li>
@@ -25,8 +25,8 @@ class Services extends React.Component {
             </span>
             <Photo photo="./images/splash3.jpg" />
           </section>
-          <section>
-            <span>
+          <section className="services-sections-wrapper">
+            <span className="services-text-wrapper">
               <p>Our Color Services Include:</p>
               <ul>
                 <li>Hair Coloring</li>

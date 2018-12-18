@@ -35,7 +35,7 @@ class Gallery extends React.Component {
         <header className="header darken-overlay">
           <p>GALLERY</p>
         </header>
-        <main>
+        <main className="gallery-main-wrapper">
           <div className="gallery-photos-list">
             {photos}
           </div>

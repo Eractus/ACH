@@ -10,9 +10,9 @@ body {
   content: '';
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
+  width: 100%;
+  height: 100%;
   display: block;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -98,6 +98,7 @@ body {
     background-image: url("../images/splash6.jpg");
   }
 
+  /* no transitions for smaller screen sizes for performance reasons */
   .splash-about-us {
     background-color: #282828;
     color: white;
@@ -126,10 +127,41 @@ body {
     font-size: 18px;
   }
 
-  .splash-about-us > article > div {
+  .splash-about-us-text-transitioned {
+    margin-bottom: 8%
+  }
+
+  .splash-about-us-text-transitioned > p:first-child {
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px #FFDF00;
+  }
+
+  .splash-about-us-text-transitioned > p {
+    font-size: 18px;
+  }
+
+  .splash-about-us-photo {
     width: auto;
     height: auto;
-    overflow: hidden;
+  }
+
+  .splash-about-us-photo > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .splash-about-us-photo-transitioned {
+    width: auto;
+    height: auto;
+  }
+
+  .splash-about-us-photo-transitioned > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 
   .splash-services {
@@ -151,6 +183,7 @@ body {
     z-index: 2;
   }
 
+  /* no transitions for smaller screen sizes for performance reasons */
   .splash-gallery {
     padding: 8% 8%;
     display: flex;
@@ -164,11 +197,22 @@ body {
     margin-left: 8%;
   }
 
-  .splash-gallery-photos > div {
+  .splash-gallery-photos > img {
     width: 40%;
     height: 35%;
     margin: 1%;
-    overflow: hidden;
+  }
+
+  .splash-gallery-photos-transitioned {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 8%;
+  }
+
+  .splash-gallery-photos-transitioned > img {
+    width: 40%;
+    height: 35%;
+    margin: 1%;
   }
 
   .splash-gallery-text {
@@ -178,6 +222,20 @@ body {
   }
 
   .splash-gallery-text > p {
+    color: white;
+    text-shadow: 2px 2px 4px #FFDF00;
+    margin-bottom: 3%;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .splash-gallery-text-transitioned {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+  }
+
+  .splash-gallery-text-transitioned > p {
     color: white;
     text-shadow: 2px 2px 4px #FFDF00;
     margin-bottom: 3%;
@@ -307,7 +365,7 @@ body {
     align-items: center;
   }
 
-  .splash-about-us-text-hidden {
+  .splash-about-us-text {
     visibility: hidden;
   }
 
@@ -315,40 +373,39 @@ body {
     to { transform: translateX(0); }
   }
 
-  .splash-about-us-text {
+  .splash-about-us-text-transitioned {
     margin-right: 10%;
     transform: translateX(-100vw);
     animation: splash-about-us-text 0.8s ease forwards;
   }
 
-  .splash-about-us-text > p:first-child {
+  .splash-about-us-text-transitioned > p:first-child {
     margin: 0px;
     font-size: 50px;
     font-weight: 500;
     text-shadow: 2px 2px 4px #FFDF00;
   }
 
-  .splash-about-us-text > p {
+  .splash-about-us-text-transitioned > p {
     font-size: 22px;
   }
 
-  .splash-about-us-photo-hidden {
+  .splash-about-us-photo {
     visibility: hidden;
   }
 
-  @keyframes splash-about-us-photo {
+  @keyframes splash-about-us-photo-transitioned {
     to { transform: translateX(0); }
   }
 
-  .splash-about-us-photo {
+  .splash-about-us-photo-transitioned {
     width: auto;
     height: auto;
-    overflow: hidden;
     transform: translateX(100vw);
-    animation: splash-about-us-photo 0.8s ease forwards;
+    animation: splash-about-us-photo-transitioned 0.8s ease forwards;
   }
 
-  .splash-about-us-photo > img {
+  .splash-about-us-photo-transitioned > img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -382,25 +439,25 @@ body {
     background-color: #282828;
   }
 
-  .splash-gallery-photos-hidden {
+  .splash-gallery-photos {
     visibility: hidden;
   }
 
-  @keyframes splash-gallery-photos {
+  @keyframes splash-gallery-photos-transitioned {
     to { transform: translateX(0); }
   }
 
-  .splash-gallery-photos {
+  .splash-gallery-photos-transitioned {
     display: flex;
     flex-wrap: wrap;
     width: 50vw;
     margin-left: 5%;
     margin-right: 2%;
     transform: translateX(-100vw);
-    animation: splash-gallery-photos 0.8s ease forwards;
+    animation: splash-gallery-photos-transitioned 0.8s ease forwards;
   }
 
-  .splash-gallery-photos > img {
+  .splash-gallery-photos-transitioned > img {
     width: 48%;
     height: 50%;
     margin: 1%;
@@ -411,19 +468,19 @@ body {
     visibility: hidden;
   }
 
-  @keyframes splash-gallery-text {
+  @keyframes splash-gallery-text-transitioned {
     to { transform: translateX(0); }
   }
 
-  .splash-gallery-text {
+  .splash-gallery-text-transitioned {
     display: flex;
     flex-direction: column;
     margin-right: 5%;
     transform: translateX(100vw);
-    animation: splash-gallery-text 0.8s ease forwards;
+    animation: splash-gallery-text-transitioned 0.8s ease forwards;
   }
 
-  .splash-gallery-text > p {
+  .splash-gallery-text-transitioned > p {
     color: white;
     text-shadow: 2px 2px 4px #FFDF00;
     margin-top: 0px;
