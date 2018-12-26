@@ -12,12 +12,11 @@ import './css/reviews.css';
 import './css/footer.css';
 
 import App from './App';
-import { env } from './config';
 // import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <BrowserRouter>
-    <App env={env} />
+    <App />
   </BrowserRouter>,
   document.getElementById('root')
 );
