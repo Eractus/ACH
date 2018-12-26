@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 
 import './css/navbar.css';
@@ -12,12 +12,13 @@ import './css/reviews.css';
 import './css/footer.css';
 
 import App from './App';
+import { env } from './config';
 // import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <HashRouter>
-    <App />
-  </HashRouter>,
+  <BrowserRouter>
+    <App env={env} />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
