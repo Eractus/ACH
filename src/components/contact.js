@@ -23,8 +23,6 @@ export default class Contact extends Component {
       REACT_APP_EMAILJS_TEMPLATEID: template
     } = env;
 
-    console.log(process.env);
-
     if (this.state.senderName === '') {
       this.setState({ errorMessage: 'Your Name cannot be empty' })
     } else if (this.state.senderEmail === '') {
