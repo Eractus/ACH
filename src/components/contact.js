@@ -14,6 +14,10 @@ export default class Contact extends Component {
   update = this.update.bind(this);
   closeConfirmationModal = this.closeConfirmationModal.bind(this);
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   handleSubmit(e) {
     e.preventDefault();
 
@@ -55,6 +59,7 @@ export default class Contact extends Component {
           formEmailSent: true,
           displayConfirmationModal: true
         });
+        document.body.style.overflow = "hidden";
       })
       .catch(err => console.error('Failed to send message. Error: ', err));
   }
@@ -66,7 +71,8 @@ export default class Contact extends Component {
       senderMessage: '',
       errorMessage: '',
       displayConfirmationModal: false
-    })
+    });
+    document.body.style.overflow = "auto";
   }
 
   render() {
