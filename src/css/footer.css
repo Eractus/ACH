@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid lightblue;
+  border-top: 1px solid #FFDF00;
   padding: 10px;
   background-color: white;
 }

@@ -30,7 +30,7 @@ class Splash extends React.Component {
     const aboutUsText = document.getElementById("about-us-text");
     const aboutUsPhoto = document.getElementById("about-us-photo");
     if (!this.state.aboutUsTop || !this.state.aboutUsBot) {
-      let top = (aboutUs.offsetTop)/2;
+      let top = (aboutUs.offsetTop)/2.5;
       let bot = top + aboutUs.offsetHeight;
       this.setState({ aboutUsTop: top, aboutUsBot: bot });
     }
@@ -44,7 +44,7 @@ class Splash extends React.Component {
     const galleryText = document.getElementById("gallery-text");
     const galleryPhotos = document.getElementById("gallery-photos");
     if (!this.state.galleryTop || !this.state.galleryBot) {
-      let top = (gallery.offsetTop)/2;
+      let top = (gallery.offsetTop)/2.5;
       let bot = top + gallery.offsetHeight;
       this.setState({ galleryTop: top, galleryBot: bot });
     }

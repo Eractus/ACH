@@ -9,6 +9,7 @@ import './css/services.css';
 import './css/gallery.css';
 import './css/photo.css';
 import './css/reviews.css';
+import './css/contact.css';
 import './css/footer.css';
 
 import App from './App';

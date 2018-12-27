@@ -6,11 +6,14 @@ export default class Contact extends Component {
     senderName: '',
     senderEmail: '',
     senderMessage: '',
-    formSubmitted: false
+    errorMessage: '',
+    formSubmitted: false,
+    displayConfirmationModal: false
   };
 
   handleSubmit = this.handleSubmit.bind(this);
   update = this.update.bind(this);
+  closeConfirmationModal = this.closeConfirmationModal.bind(this);
 
   handleSubmit(e) {
     e.preventDefault();
@@ -20,17 +23,25 @@ export default class Contact extends Component {
       REACT_APP_EMAILJS_TEMPLATEID: template
     } = env;
 
-    this.sendFeedback(
-      template,
-      this.state.senderName,
-      this.state.senderEmail,
-      receiverEmail,
-      this.state.senderMessage
-    );
+    if (this.state.senderName === '') {
+      this.setState({ errorMessage: 'Your Name cannot be empty' })
+    } else if (this.state.senderEmail === '') {
+      this.setState({ errorMessage: 'Your Email cannot be empty' })
+    } else if (this.state.senderMessage === '') {
+      this.setState({ errorMessage: 'Your Message cannot be empty' })
+    } else {
+      this.sendFeedback(
+        template,
+        this.state.senderName,
+        this.state.senderEmail,
+        receiverEmail,
+        this.state.senderMessage
+      );
 
-    this.setState({
-      formSubmitted: true
-    });
+      this.setState({
+        formSubmitted: true
+      });
+    }
   }
 
   update(field) {
@@ -47,43 +58,70 @@ export default class Contact extends Component {
       })
       .then(res => {
         this.setState({
-          formEmailSent: true
+          formEmailSent: true,
+          displayConfirmationModal: true
         });
       })
       .catch(err => console.error('Failed to send message. Error: ', err));
   }
 
+  closeConfirmationModal() {
+    this.setState({
+      senderName: '',
+      senderEmail: '',
+      senderMessage: '',
+      errorMessage: '',
+      displayConfirmationModal: false
+    })
+  }
+
   render() {
+    const confirmationModal = (this.state.displayConfirmationModal) ?
+      <div className="modal-overlay">
+        <div className="contact-confirmation-modal">
+          <p>Your Message Has Been Sent!</p>
+          <button onClick={this.closeConfirmationModal}>OK</button>
+        </div>
+      </div> : "";
+
     return (
       <div className="contact-container">
+        {confirmationModal}
         <header className="header darken-overlay">
           <p>CONTACT</p>
         </header>
-        <form className="contact-form" onSubmit={this.handleSubmit}>
-          <h1>Contact us</h1>
-          <input
-            className="contact-form-name"
-            type="text"
-            value={this.state.senderName}
-            placeholder="Your Name"
-            onChange={this.update('senderName')}
-          />
-          <input
-            className="contact-form-email"
-            type="text"
-            value={this.state.senderEmail}
-            placeholder="Your Email"
-            onChange={this.update('senderEmail')}
-          />
-          <textarea
-            className="contact-form-message"
-            type="text"
-            value={this.state.senderMessage}
-            placeholder="Your Message"
-            onChange={this.update('senderMessage')}
-          />
-          <input type="submit" value="Send Message" className="contact-form-button" />
-        </form>
+        <main className="contact-main-wrapper">
+          <form className="contact-form" onSubmit={this.handleSubmit}>
+            <h2>Contact Us</h2>
+            <input
+              className="contact-form-input"
+              type="text"
+              value={this.state.senderName}
+              placeholder="Your Name"
+              onChange={this.update('senderName')}
+            />
+            <input
+              className="contact-form-input"
+              type="email"
+              value={this.state.senderEmail}
+              placeholder="Your Email"
+              onChange={this.update('senderEmail')}
+            />
+            <textarea
+              className="contact-form-input message"
+              type="text"
+              value={this.state.senderMessage}
+              placeholder="Your Message"
+              onChange={this.update('senderMessage')}
+            />
+            <p>{this.state.errorMessage}</p>
+            <input type="submit" value="Send Message" className="contact-form-button" />
+          </form>
+          <section className="contact-static-info">
+            <h2>Hours</h2>
+            <p>Currently, we are by Appointments only. Call 714-706-2948 to make yours today!</p>
+          </section>
+        </main>
       </div>
     );
   }
