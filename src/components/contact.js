@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { env } from '../config';
 
 export default class Contact extends Component {
   state = {
@@ -18,10 +17,7 @@ export default class Contact extends Component {
   handleSubmit(e) {
     e.preventDefault();
 
-    const {
-      REACT_APP_EMAILJS_RECEIVER: receiverEmail,
-      REACT_APP_EMAILJS_TEMPLATEID: template
-    } = env;
+    const templateID = "reply_to_form_submission";
 
     if (this.state.senderName === '') {
       this.setState({ errorMessage: 'Your Name cannot be empty' })
@@ -31,10 +27,9 @@ export default class Contact extends Component {
       this.setState({ errorMessage: 'Your Message cannot be empty' })
     } else {
       this.sendFeedback(
-        template,
+        templateID,
         this.state.senderName,
         this.state.senderEmail,
-        receiverEmail,
         this.state.senderMessage
       );
 
@@ -48,12 +43,11 @@ export default class Contact extends Component {
     return (e) => this.setState({ [field]: e.currentTarget.value });
   }
 
-  sendFeedback(templateId, senderName, senderEmail, receiverEmail, senderMessage) {
+  sendFeedback(templateId, senderName, senderEmail, senderMessage) {
     window.emailjs
       .send('ach_mailgun', templateId, {
         senderName,
         senderEmail,
-        receiverEmail,
         senderMessage
       })
       .then(res => {
