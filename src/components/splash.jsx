@@ -75,7 +75,7 @@ class Splash extends React.Component {
               <Link className="splash-button" to="/about"><button>Learn More</button></Link>
             </span>
             <div id="about-us-photo" className="splash-about-us-photo">
-              <img src="./images/splash7.jpg" />
+              <img src="./images/chair1.jpg" />
             </div>
           </article>
         </section>
@@ -85,10 +85,18 @@ class Splash extends React.Component {
         </section>
         <section id="gallery" className="splash-gallery">
           <div id="gallery-photos" className="splash-gallery-photos">
-            <img src="./images/splash1.jpg" />
-            <img src="./images/splash2.jpg" />
-            <img src="./images/splash3.jpg" />
-            <img src="./images/splash4.jpg" />
+            <div>
+              <img src="./images/chair3.jpg" />
+            </div>
+            <div>
+              <img src="./images/cutting1.jpg" />
+            </div>
+            <div>
+              <img src="./images/cutting3.jpg" />
+            </div>
+            <div>
+              <img src="./images/product2.jpg" />
+            </div>
           </div>
           <div id="gallery-text"className="splash-gallery-text">
             <p>Take a Glimpse Inside Our Lab</p>

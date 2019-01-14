@@ -65,37 +65,41 @@ body {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 0 0;
   }
 
   .splash-photostream-images span:nth-child(1) {
     animation-delay: 0s;
-    background-image: url("../images/splash1.jpg");
+    background-image: url("../images/photostream1.jpg");
   }
 
   .splash-photostream-images span:nth-child(2) {
     animation-delay: 5s;
-    background-image: url("../images/splash2.jpg");
+    background-image: url("../images/photostream2.jpg");
   }
 
   .splash-photostream-images span:nth-child(3) {
+    background-position: 60% 50%;
     animation-delay: 10s;
-    background-image: url("../images/splash3.jpg");
+    background-image: url("../images/photostream3.jpg");
   }
 
   .splash-photostream-images span:nth-child(4) {
+    background-position: 30% 50%;
     animation-delay: 15s;
-    background-image: url("../images/splash4.jpg");
+    background-image: url("../images/photostream4.jpg");
   }
 
   .splash-photostream-images span:nth-child(5) {
+    background-position: 50% 50%;
     animation-delay: 20s;
-    background-image: url("../images/splash5.jpg");
+    background-image: url("../images/photostream5.jpg");
   }
 
   .splash-photostream-images span:nth-child(6) {
+    background-position: 30% 50%;
     animation-delay: 25s;
-    background-image: url("../images/splash6.jpg");
+    background-image: url("../images/photostream6.jpg");
   }
 
   /* no transitions for smaller screen sizes for performance reasons */
@@ -169,8 +173,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../images/splash8.jpg");
-    background-size: 100% 100%;
+    background-image: url("../images/photostream2.jpg");
+    background-position: 30% 15%;
+    /* background-size: 100% 100%; */
   }
 
   .splash-services > p {
@@ -188,6 +193,9 @@ body {
     padding: 8% 8%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     background-color: #282828;
   }
 
@@ -197,10 +205,16 @@ body {
     margin-left: 8%;
   }
 
-  .splash-gallery-photos > img {
-    width: 40%;
-    height: 35%;
+  .splash-gallery-photos > div {
+    width: 320px;
+    height: 200px;
     margin: 1%;
+  }
+
+  .splash-gallery-photos img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 
   .splash-gallery-photos-transitioned {
@@ -209,16 +223,25 @@ body {
     margin-left: 8%;
   }
 
-  .splash-gallery-photos-transitioned > img {
-    width: 40%;
-    height: 35%;
+  .splash-gallery-photos-transitioned > div {
+    width: 320px;
+    height: 200px;
     margin: 1%;
   }
+
+  .splash-gallery-photos-transitioned img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
 
   .splash-gallery-text {
     display: flex;
     flex-direction: column;
-    margin-left: 8%;
+    align-items: center;
+    text-align: center;
+    margin-top: 8%;
   }
 
   .splash-gallery-text > p {
@@ -232,7 +255,9 @@ body {
   .splash-gallery-text-transitioned {
     display: flex;
     flex-direction: column;
-    margin-left: 8%;
+    align-items: center;
+    text-align: center;
+    margin-top: 8%;
   }
 
   .splash-gallery-text-transitioned > p {
@@ -249,7 +274,7 @@ body {
     flex-direction: column;
     align-items: center;
     color: white;
-    background-image: url("../images/splash9.jpg");
+    background-image: url("../images/reviews.jpg");
     background-size: cover;
   }
 
@@ -310,46 +335,48 @@ body {
   .splash-photostream-images > span {
     opacity: 0;
     animation-name: slides;
-    animation-duration: 37s;
+    animation-duration: 35s;
     animation-iteration-count: infinite;
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 0 0;
     background-attachment: fixed;
   }
 
   .splash-photostream-images span:nth-child(1) {
     animation-delay: 0s;
-    background-image: url("../images/splash1.jpg");
+    background-image: url("../images/photostream1.jpg");
   }
 
   .splash-photostream-images span:nth-child(2) {
     animation-delay: 5s;
-    background-image: url("../images/splash2.jpg");
+    background-image: url("../images/photostream2.jpg");
   }
 
   .splash-photostream-images span:nth-child(3) {
     animation-delay: 10s;
-    background-image: url("../images/splash3.jpg");
+    background-image: url("../images/photostream3.jpg");
   }
 
   .splash-photostream-images span:nth-child(4) {
     animation-delay: 15s;
-    background-image: url("../images/splash4.jpg");
+    background-image: url("../images/photostream4.jpg");
   }
 
   .splash-photostream-images span:nth-child(5) {
+    background-position: 50% 50%;
     animation-delay: 20s;
-    background-image: url("../images/splash5.jpg");
+    background-image: url("../images/photostream5.jpg");
   }
 
   .splash-photostream-images span:nth-child(6) {
+    background-position: 50% 50%;
     animation-delay: 25s;
-    background-image: url("../images/splash6.jpg");
+    background-image: url("../images/photostream6.jpg");
   }
 
   .splash-about-us {
@@ -416,7 +443,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../images/splash8.jpg");
+    background-image: url("../images/photostream2.jpg");
     background-size: cover;
     background-attachment: fixed;
   }
@@ -457,11 +484,16 @@ body {
     animation: splash-gallery-photos-transitioned 0.8s ease forwards;
   }
 
-  .splash-gallery-photos-transitioned > img {
-    width: 48%;
-    height: 50%;
+  .splash-gallery-photos-transitioned > div {
+    width: 300px;
+    height: 200px;
     margin: 1%;
-    overflow: hidden;
+  }
+
+  .splash-gallery-photos-transitioned img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .splash-gallery-text-hidden {
@@ -494,7 +526,7 @@ body {
     flex-direction: column;
     align-items: center;
     color: white;
-    background-image: url("../images/splash9.jpg");
+    background-image: url("../images/reviews.jpg");
     background-size: cover;
     background-attachment: fixed;
   }

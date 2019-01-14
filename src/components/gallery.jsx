@@ -9,14 +9,15 @@ class Gallery extends React.Component {
   render() {
 
     const photoURLs = [
-      "./images/splash1.jpg",
-      "./images/splash2.jpg",
-      "./images/splash3.jpg",
-      "./images/splash4.jpg",
-      "./images/splash6.jpg",
-      "./images/splash5.jpg",
-      "./images/splash8.jpg",
-      "./images/splash9.jpg"
+      "./images/chair2.jpg",
+      "./images/cutting1.jpg",
+      "./images/cutting3.jpg",
+      "./images/product2.jpg",
+      "./images/plant1.jpg",
+      "./images/cutting2.jpg",
+      "./images/plant2.jpg",
+      "./images/chair1.jpg",
+      "./images/product1.jpg"
     ];
 
     const photos = [];

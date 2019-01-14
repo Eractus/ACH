@@ -17,24 +17,35 @@ class Services extends React.Component {
             <span className="services-text-wrapper">
               <p>We Specialize In:</p>
               <ul>
-                <li>Male and Female Haircut</li>
-                <li>Perms</li>
+                <li>Women's haircuts</li>
+                <li>Men's haircuts</li>
                 <li>Shaves</li>
-                <li>Beard Trims</li>
+                <li>Coloring</li>
+                <li>Blonding</li>
+                <li>Vivids</li>
+                <li>Balayage</li>
+                <li>Pixies</li>
+                <li>Make-up</li>
               </ul>
             </span>
-            <Photo photo="./images/splash3.jpg" />
+            <Photo photo="./images/cutting2.jpg" />
           </section>
           <section className="services-sections-wrapper">
             <span className="services-text-wrapper">
               <p>Our Color Services Include:</p>
               <ul>
-                <li>Hair Coloring</li>
+                <li>Color touch-ups</li>
+                <li>All over color</li>
+                <li>Blonding</li>
                 <li>Highlights</li>
+                <li>Balayage</li>
+                <li>Vivids</li>
                 <li>Grey Coverage</li>
+                <li>Grey blending/Camo</li>
               </ul>
+              <h5>* Every color service includes a finished blowout style</h5>
             </span>
-            <Photo photo="./images/splash5.jpg" />
+            <Photo photo="./images/chair3.jpg" />
           </section>
         </main>
       </div>
