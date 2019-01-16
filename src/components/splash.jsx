@@ -106,9 +106,9 @@ class Splash extends React.Component {
         <section className="splash-reviews darken-overlay">
           <div className="splash-reviews-text">
             <h3>Here's What Our Customers Have to Say</h3>
-            <h5>"Kefka is the man! 5/5 stars!!!"</h5>
+            <h5>Kefka is the man! 5/5 stars!!!</h5>
             <p>-Ameer A.</p>
-            <h5>"The ACH team has winning members. Highly recommended!"</h5>
+            <h5>The ACH team has winning members. Highly recommended!</h5>
             <p>-Jon W.</p>
           </div>
           <Link className="splash-button" to="/reviews"><button>All Reviews</button></Link>

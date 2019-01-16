@@ -2,12 +2,11 @@
   .navbar-container {
     width: calc(100vw - 80px);
     background-image: url("../images/navbar.jpg");
-    font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px;
-    border-bottom: 1px solid #FFDF00;
+    border-bottom: 1px solid #a8a7ae;
     position: relative;
     z-index: 5;
   }
@@ -37,14 +36,14 @@
   }
 
   .navbar-links > a {
-    color: lightgrey;
+    color: white;
     margin-bottom: 14px;
     text-decoration: none;
   }
 
   .navbar-links > a:hover {
-    color: #FFDF00;
-    border-bottom: 2px solid #FFDF00;
+    color: #a8a7ae;
+    border-bottom: 2px solid #69564e;
   }
 
   .show-navbar-links {
@@ -54,12 +53,20 @@
   }
 
   .navbar-contact-number {
+    font-size: 24px;
+    text-decoration: none;
     margin: 0;
     color: white;
     background-color: black;
     letter-spacing: 1px;
     padding: 8px;
     border-radius: 20px;
+  }
+
+  .navbar-contact-number:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
   }
 
   .navbar-menu-icon {
@@ -77,12 +84,11 @@
   .navbar-container {
     width: calc(100vw - 20px);
     background-image: url("../images/navbar.jpg");
-    font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #FFDF00;
+    border-bottom: 1px solid #a8a7ae;
     position: fixed;
     top: 0;
     z-index: 5;
@@ -108,22 +114,30 @@
   }
 
   .navbar-links > a {
-    color: lightgrey;
+    color: white;
     margin: 0 15px;
     margin-top: 1%;
     text-decoration: none;
   }
 
   .navbar-links > a:hover {
-    color: #FFDF00;
-    border-bottom: 2px solid #FFDF00;
+    color: #a8a7ae;
+    border-bottom: 2px solid #69564e;
   }
 
   .navbar-contact-number {
+    font-size: 24px;
+    text-decoration: none;
     color: white;
     background-color: black;
     padding: 18px 50px;
     border-radius: 20px;
+  }
+
+  .navbar-contact-number:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
   }
 
   .navbar-menu-icon {

@@ -1,6 +1,5 @@
 @media only screen and (max-width: 992px) {
   .reviews-container {
-    font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
     flex: 1 0 auto;
   }
 
@@ -22,7 +21,6 @@
   }
 
   .reviews-section-wrapper > h3 {
-    color: #FFDF00;
     margin-top: 0;
     font-size: 20px;
     font-weight: 500;
@@ -44,21 +42,35 @@
   }
 
   .reviews-list-item > h5 {
+    color: #e5e4e2;
     font-size: 18px;
     font-weight: 400;
     font-style: italic;
   }
 
+  .reviews-list-item > h5::before {
+    content: "\275D";
+    color: #69564e;
+    font-size: 28px;
+    margin-right: 10px;
+  }
+
+  .reviews-list-item > h5::after {
+    content: "\275E";
+    color: #69564e;
+    font-size: 28px;
+    margin-left: 10px;
+  }
+
   .reviews-list-item > p {
+    color: #a8a7ae;
     font-size: 14px;
     font-weight: 200;
-    color: #FFDF00;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .reviews-container {
-    font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
     margin-top: 170px;
     flex: 1 0 auto;
   }
@@ -81,7 +93,6 @@
   }
 
   .reviews-section-wrapper > h3 {
-    color: #FFDF00;
     margin: 0;
     font-size: 28px;
     font-weight: 500;
@@ -103,14 +114,29 @@
   }
 
   .reviews-list-item > h5 {
+    color: #e5e4e2;
     font-size: 22px;
     font-weight: 400;
     font-style: italic;
   }
 
+  .reviews-list-item > h5::before {
+    content: "\275D";
+    color: #69564e;
+    font-size: 42px;
+    margin-right: 20px;
+  }
+
+  .reviews-list-item > h5::after {
+    content: "\275E";
+    color: #69564e;
+    font-size: 42px;
+    margin-left: 20px;
+  }
+
   .reviews-list-item > p {
+    color: #a8a7ae;
     font-size: 18px;
     font-weight: 200;
-    color: #FFDF00;
   }
 }

@@ -1,6 +1,5 @@
 @media only screen and (max-width: 992px) {
   .services-container {
-    font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
     flex: 1 0 auto;
   }
 
@@ -34,18 +33,24 @@
   }
 
   .services-text-wrapper > p {
-    color: #FFDF00;
     margin-top: 0;
     font-size: 25px;
   }
 
-  .services-text-wrapper > ul {
-    list-style-type: circle;
-    font-weight: 300;
+  .services-text-wrapper ul {
+    list-style: none;
+    color: #a8a7ae;
+  }
+
+  .services-text-wrapper li::before {
+    content: "\25B7";
+    color: #69564e;
+    font-size: 18px;
+    margin-right: 10px;
   }
 
   .services-text-wrapper h5 {
-    color: #FFDF00;
+    color: #e5e4e2;
     font-weight: 300;
     font-size: 18px;
   }
@@ -53,7 +58,6 @@
 
 @media only screen and (min-width: 992px) {
   .services-container {
-    font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
     margin-top: 170px;
     flex: 1 0 auto;
   }
@@ -86,18 +90,24 @@
   }
 
   .services-text-wrapper > p {
-    color: #FFDF00;
     margin-top: 0;
     font-size: 28px;
   }
 
-  .services-text-wrapper > ul {
-    list-style-type: circle;
-    font-weight: 300;
+  .services-text-wrapper ul {
+    list-style: none;
+    color: #a8a7ae;
+  }
+
+  .services-text-wrapper li::before {
+    content: "\25B7";
+    color: #69564e;
+    font-size: 18px;
+    margin-right: 10px;
   }
 
   .services-text-wrapper h5 {
-    color: #FFDF00;
+    color: #e5e4e2;
     font-weight: 300;
     font-size: 18px;
   }

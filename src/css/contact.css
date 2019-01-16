@@ -1,14 +1,14 @@
 @media only screen and (max-width: 600px) {
   .contact-container {
-    font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
     flex: 1 0 auto;
   }
 
   h2 {
+    color: white;
     margin-top: 0;
     font-size: 28px;
     font-weight: 400;
-    color: #FFDF00;
+    border-bottom: 2px solid #69564e;
   }
 
   p {
@@ -28,18 +28,19 @@
   }
 
   .contact-confirmation-modal > button {
-    color: black;
+    font-family: 'Sorts Mill Goudy', serif;
+    color: #a8a7ae;
     padding: 8px 20px;
+    border: none;
     border-radius: 5px;
-    font-weight: 200;
-    background-color: #FFDF00;
+    font-size: 14px;
+    background-color: #69564e;
     cursor: pointer;
   }
 
   .contact-confirmation-modal > button:hover {
-    color: #FFDF00;
-    background-color: black;
-    border-radius: 5px;
+    color: #69564e;
+    background-color: #a8a7ae;
   }
 
   .contact-main-wrapper {
@@ -60,19 +61,25 @@
     margin-bottom: 50px;
   }
 
+  .contact-form > h2 {
+    margin: 0 auto;
+    margin-bottom: 9px;
+  }
+
   .contact-form-input {
-    color: white;
+    font-family: 'Sorts Mill Goudy', serif;
+    color: #e5e4e2;
     font-weight: 200;
     padding: 2%;
     font-size: 22px;
     background-color: #282828;
-    border-width: medium;
+    border-width: thin;
     border-color: white;
-    margin-bottom: 18px;
+    margin: 9px 0;
   }
 
   .contact-form-input::placeholder {
-    color: #B8B8B8;
+    color: #a8a7ae;
     font-weight: 200;
   }
 
@@ -92,42 +99,52 @@
   }
 
   .contact-form-button {
+    font-family: 'Sorts Mill Goudy', serif;
     width: 180px;
     font-size: 22px;
-    color: black;
+    color: #a8a7ae;
     padding: 15px 20px;
+    border: none;
     border-radius: 5px;
     font-weight: 200;
-    background-color: #FFDF00;
+    background-color: #69564e;
     cursor: pointer;
   }
 
   .contact-form-button:hover {
-    color: #FFDF00;
-    background-color: black;
+    color: #69564e;
+    background-color: #a8a7ae;
     border-radius: 5px;
   }
 
   .contact-static-info {
+    color: #e5e4e2;
     font-size: 22px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
+  .contact-static-info > ul {
+    list-style: none;
+    line-height: 200%;
+    padding-left: 0;
+    margin: 0;
+  }
 }
 
 @media only screen and (min-width: 600px) {
   .contact-container {
-    font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
     flex: 1 0 auto;
   }
 
   h2 {
+    color: white;
     margin-top: 0;
     font-size: 28px;
     font-weight: 400;
-    color: #FFDF00;
+    border-bottom: 2px solid #69564e;
   }
 
   p {
@@ -147,53 +164,56 @@
   }
 
   .contact-confirmation-modal > button {
-    color: black;
+    font-family: 'Sorts Mill Goudy', serif;
+    color: #a8a7ae;
     padding: 8px 20px;
+    border: none;
     border-radius: 5px;
-    font-weight: 200;
-    background-color: #FFDF00;
+    font-size: 14px;
+    background-color: #69564e;
     cursor: pointer;
   }
 
   .contact-confirmation-modal > button:hover {
-    color: #FFDF00;
-    background-color: black;
-    border-radius: 5px;
+    color: #69564e;
+    background-color: #a8a7ae;
   }
 
   .contact-main-wrapper {
     display: flex;
     justify-content: space-around;
     background-color: #282828;
-    color: white;
     padding: 3% 5%;
   }
 
   .contact-form {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     width: 55%;
     font-size: 22px;
   }
 
+  .contact-form > h2 {
+    margin: 0 auto;
+    margin-bottom: 9px;
+  }
+
   .contact-form-input {
-    color: white;
+    font-family: 'Sorts Mill Goudy', serif;
+    color: #e5e4e2;
     font-weight: 200;
     padding: 2%;
     font-size: 22px;
     background-color: #282828;
-    border-width: medium;
+    border-width: thin;
     border-color: white;
-    margin-bottom: 5%;
+    margin: 9px 0;
   }
 
   .contact-form-input::placeholder {
-    color: #B8B8B8;
+    color: #a8a7ae;
     font-weight: 200;
-  }
-
-  .contact-form-input:focus {
-    border-color: #FFDF00;
   }
 
   .message {
@@ -208,23 +228,26 @@
   }
 
   .contact-form-button {
+    font-family: 'Sorts Mill Goudy', serif;
     width: 180px;
     font-size: 22px;
-    color: black;
+    color: #a8a7ae;
     padding: 15px 20px;
+    border: none;
     border-radius: 5px;
     font-weight: 200;
-    background-color: #FFDF00;
+    background-color: #69564e;
     cursor: pointer;
   }
 
   .contact-form-button:hover {
-    color: #FFDF00;
-    background-color: black;
+    color: #69564e;
+    background-color: #a8a7ae;
     border-radius: 5px;
   }
 
   .contact-static-info {
+    color: #e5e4e2;
     font-size: 22px;
     display: flex;
     flex-direction: column;
@@ -233,20 +256,27 @@
     width: 35%;
     margin-left: 5%;
   }
+
+  .contact-static-info > ul {
+    list-style: none;
+    line-height: 200%;
+    padding-left: 0;
+    margin: 0;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   .contact-container {
-    font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
     margin-top: 170px;
     flex: 1 0 auto;
   }
 
   h2 {
+    color: white;
     margin-top: 0;
     font-size: 28px;
     font-weight: 400;
-    color: #FFDF00;
+    border-bottom: 2px solid #69564e;
   }
 
   p {
@@ -266,18 +296,19 @@
   }
 
   .contact-confirmation-modal > button {
-    color: black;
+    font-family: 'Sorts Mill Goudy', serif;
+    color: #a8a7ae;
     padding: 8px 20px;
+    border: none;
     border-radius: 5px;
-    font-weight: 200;
-    background-color: #FFDF00;
+    font-size: 14px;
+    background-color: #69564e;
     cursor: pointer;
   }
 
   .contact-confirmation-modal > button:hover {
-    color: #FFDF00;
-    background-color: black;
-    border-radius: 5px;
+    color: #69564e;
+    background-color: #a8a7ae;
   }
 
   .contact-main-wrapper {
@@ -295,24 +326,26 @@
     font-size: 22px;
   }
 
+  .contact-form > h2 {
+    margin: 0 auto;
+    margin-bottom: 9px;
+  }
+
   .contact-form-input {
-    color: white;
+    font-family: 'Sorts Mill Goudy', serif;
+    color: #e5e4e2;
     font-weight: 200;
     padding: 2%;
     font-size: 22px;
     background-color: #282828;
-    border-width: medium;
+    border-width: thin;
     border-color: white;
-    margin-bottom: 18px;
+    margin: 9px 0;
   }
 
   .contact-form-input::placeholder {
-    color: #B8B8B8;
+    color: #a8a7ae;
     font-weight: 200;
-  }
-
-  .contact-form-input:focus {
-    border-color: #FFDF00;
   }
 
   .message {
@@ -327,23 +360,26 @@
   }
 
   .contact-form-button {
+    font-family: 'Sorts Mill Goudy', serif;
     width: 180px;
     font-size: 22px;
-    color: black;
+    color: #a8a7ae;
     padding: 15px 20px;
+    border: none;
     border-radius: 5px;
     font-weight: 200;
-    background-color: #FFDF00;
+    background-color: #69564e;
     cursor: pointer;
   }
 
   .contact-form-button:hover {
-    color: #FFDF00;
-    background-color: black;
+    color: #69564e;
+    background-color: #a8a7ae;
     border-radius: 5px;
   }
 
   .contact-static-info {
+    color: #e5e4e2;
     font-size: 22px;
     display: flex;
     flex-direction: column;
@@ -351,5 +387,12 @@
     text-align: center;
     width: 45%;
     margin-left: 5%;
+  }
+
+  .contact-static-info > ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    line-height: 200%;
   }
 }

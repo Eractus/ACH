@@ -1,9 +1,8 @@
 .footer-container {
-  font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #FFDF00;
+  border-top: 1px solid #a8a7ae;
   padding: 10px;
   background-color: white;
 }
@@ -38,6 +37,6 @@
 }
 
 .footer-social-media-link > img:hover {
-  background-color: #FFDF00;
+  background-color: #a8a7ae;
   border-radius: 50%;
 }

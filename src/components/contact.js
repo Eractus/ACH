@@ -79,7 +79,7 @@ export default class Contact extends Component {
     const confirmationModal = (this.state.displayConfirmationModal) ?
       <div className="modal-overlay">
         <div className="contact-confirmation-modal">
-          <p>Your Message Has Been Sent!</p>
+          <p>Thanks for your message!</p>
           <button onClick={this.closeConfirmationModal}>OK</button>
         </div>
       </div> : "";
@@ -119,7 +119,15 @@ export default class Contact extends Component {
           </form>
           <section className="contact-static-info">
             <h2>Hours</h2>
-            <p>Currently, we are by Appointments only. Call 714-706-2948 to make yours today!</p>
+            <ul>
+              <li>Monday: 10:00 AM - 8:00 PM</li>
+              <li>Tuesday: 10:00 AM - 8:00 PM</li>
+              <li>Wednesday: 10:00 AM - 8:00 PM</li>
+              <li>Thursday: 10:00 AM - 8:00 PM</li>
+              <li>Friday: 10:00 AM - 8:00 PM</li>
+              <li>Saturday: 10:00 AM - 8:00 PM</li>
+              <li>Sunday: CLOSED</li>
+            </ul>
           </section>
         </main>
       </div>

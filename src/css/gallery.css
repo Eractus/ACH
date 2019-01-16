@@ -1,6 +1,5 @@
 @media only screen and (max-width: 600px) {
   .gallery-container {
-    font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
     flex: 1 0 auto;
   }
 
@@ -25,7 +24,6 @@
 
 @media only screen and (min-width: 600px) {
   .gallery-container {
-    font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
     flex: 1 0 auto;
   }
 
@@ -50,7 +48,6 @@
 
 @media only screen and (min-width: 992px) {
   .gallery-container {
-    font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
     margin-top: 170px;
     flex: 1 0 auto;
   }
