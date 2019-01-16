@@ -295,6 +295,20 @@ body {
     font-style: italic;
   }
 
+  .splash-reviews-text > h5::before {
+    content: "\275D";
+    color: #69564e;
+    font-size: 28px;
+    margin-right: 10px;
+  }
+
+  .splash-reviews-text > h5::after {
+    content: "\275E";
+    color: #69564e;
+    font-size: 28px;
+    margin-left: 10px;
+  }
+
   .splash-reviews-text > p {
     color: #a8a7ae;
     font-size: 14px;
