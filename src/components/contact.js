@@ -133,28 +133,28 @@ export default class Contact extends Component {
               className="contact-form-input"
               type="text"
               value={this.state.senderName}
-              placeholder="Your Name"
+              placeholder="Your Name *"
               onChange={this.update('senderName')}
             />
             <input
               className="contact-form-input"
               type="email"
               value={this.state.senderEmail}
-              placeholder="Your Email"
+              placeholder="Your Email *"
               onChange={this.update('senderEmail')}
             />
             <input
               className="contact-form-input"
               type="tel"
               value={this.state.senderNumber}
-              placeholder="Your Number (optional)"
+              placeholder="Your Number"
               onChange={this.update('senderNumber')}
             />
             <textarea
               className="contact-form-input message"
               type="text"
               value={this.state.senderMessage}
-              placeholder="Your Message"
+              placeholder="Your Message *"
               onChange={this.update('senderMessage')}
             />
             <p>{this.state.errorMessage}</p>
