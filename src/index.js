@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import './css/navbar.css';
 import './css/splash.css';
 import './css/about.css';
+import './css/team.css';
 import './css/services.css';
 import './css/gallery.css';
 import './css/photo.css';
