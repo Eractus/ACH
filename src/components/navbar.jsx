@@ -42,6 +42,7 @@ class Navbar extends React.Component {
         <div id="toggle-navbar-links" className="navbar-links">
           <Link onClick={this.collapseLinks} to="/">HOME</Link>
           <Link onClick={this.collapseLinks} to="/about">ABOUT</Link>
+          <Link onClick={this.collapseLinks} to="/team">OUR TEAM</Link>
           <Link onClick={this.collapseLinks} to="/services">SERVICES</Link>
           <Link onClick={this.collapseLinks} to="/gallery">GALLERY</Link>
           <Link onClick={this.collapseLinks} to="/reviews">REVIEWS</Link>
