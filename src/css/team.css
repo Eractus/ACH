@@ -3,4 +3,46 @@
     margin-top: 170px;
     flex: 1 0 auto;
   }
+
+  .team-main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 10%;
+    background-color: #282828;
+  }
+
+  .team-main-wrapper h1 {
+    color: white;
+    font-size: 38px;
+    font-weight: 300;
+  }
+
+  .team-main-wrapper h3 {
+    color: #e5e4e2;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .team-main-wrapper p {
+    color: white;
+    font-size: 16px;
+  }
+
+  .team-section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .team-artist-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 2% 5%;
+  }
 }
