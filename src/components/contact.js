@@ -4,7 +4,6 @@ export default class Contact extends Component {
   state = {
     senderName: '',
     senderEmail: '',
-    senderNumber: '',
     senderMessage: '',
     errorMessage: '',
     formSubmitted: false,
@@ -35,7 +34,6 @@ export default class Contact extends Component {
         templateID,
         this.state.senderName,
         this.state.senderEmail,
-        this.state.senderNumber,
         this.state.senderMessage
       );
 
@@ -49,39 +47,8 @@ export default class Contact extends Component {
     return (e) => this.setState({ [field]: e.currentTarget.value });
   }
 
-  submitMessage(templateId, senderName, senderEmail, senderNumber, senderMessage) {
-    // validations relating to the optional number field
-    if (senderNumber !== '') {
-      let name = senderName.substring(0, senderName.lastIndexOf(" "));
-      const textMessage = `Alchemy Collective Hairlab - Thanks for contacting us ${name}! We will be in touch soon regarding your inquiry. You can also contact us directly at 714-706-2948.`;
-
-      fetch('/api/messages', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          to: senderNumber,
-          body: textMessage
-        })
-      })
-        .then(res => res.json())
-        .then(data => {
-          if (data.success) {
-            this.sendEmail(templateId, senderName, senderEmail, senderMessage);
-          } else {
-            this.setState({
-              errorMessage: 'Message failed to send - double check your number is valid.'
-            });
-          }
-        });
-    } else {
-      this.sendEmail(templateId, senderName, senderEmail, senderMessage);
-    }
-  }
-
-  // invokes Email.js's send function upon handling form submission, executed in submitMessage function regardless of presence of optional phone number (unless provided number is invalid)
-  sendEmail(templateId, senderName, senderEmail, senderMessage) {
+  // invokes Email.js's send function upon handling form submission
+  submitMessage(templateId, senderName, senderEmail, senderMessage) {
     window.emailjs
       .send('ach_mailgun', templateId, {
         senderName,
@@ -95,7 +62,8 @@ export default class Contact extends Component {
         });
         document.body.style.overflow = "hidden";
       })
-      .catch(err => console.error('Failed to send message. Error: ', err));
+      .catch(err => console.error('Failed to send message. Error: ', err)
+    );
   }
 
   // clear all the fields after closing the confirmation modal
@@ -103,7 +71,6 @@ export default class Contact extends Component {
     this.setState({
       senderName: '',
       senderEmail: '',
-      senderNumber: '',
       senderMessage: '',
       errorMessage: '',
       displayConfirmationModal: false
@@ -133,28 +100,21 @@ export default class Contact extends Component {
               className="contact-form-input"
               type="text"
               value={this.state.senderName}
-              placeholder="Your Name *"
+              placeholder="Your Name"
               onChange={this.update('senderName')}
             />
             <input
               className="contact-form-input"
               type="email"
               value={this.state.senderEmail}
-              placeholder="Your Email *"
+              placeholder="Your Email"
               onChange={this.update('senderEmail')}
-            />
-            <input
-              className="contact-form-input"
-              type="tel"
-              value={this.state.senderNumber}
-              placeholder="Your Number"
-              onChange={this.update('senderNumber')}
             />
             <textarea
               className="contact-form-input message"
               type="text"
               value={this.state.senderMessage}
-              placeholder="Your Message *"
+              placeholder="Your Message"
               onChange={this.update('senderMessage')}
             />
             <p>{this.state.errorMessage}</p>
