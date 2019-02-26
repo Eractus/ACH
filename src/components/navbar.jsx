@@ -29,6 +29,11 @@ class Navbar extends React.Component {
     }
   }
 
+  // this function is being executed exclusively when clicking to go to the OUR TEAM page because the page needs to refresh to load data for the Instagram embed, otherwise the IG UI will be missing data.
+  refresh() {
+    window.location.reload();
+  }
+
   render() {
     const menuIcon = (this.state.toggled) ?
       <img onClick={this.toggleLinks} className="navbar-menu-icon" src="./images/collapse.png" /> :
@@ -42,7 +47,7 @@ class Navbar extends React.Component {
         <div id="toggle-navbar-links" className="navbar-links">
           <Link onClick={this.collapseLinks} to="/">HOME</Link>
           <Link onClick={this.collapseLinks} to="/about">ABOUT</Link>
-          <Link onClick={this.collapseLinks} to="/team">OUR TEAM</Link>
+          <Link onClick={this.collapseLinks, this.refresh} to="/team">OUR TEAM</Link>
           <Link onClick={this.collapseLinks} to="/services">SERVICES</Link>
           <Link onClick={this.collapseLinks} to="/gallery">GALLERY</Link>
           <Link onClick={this.collapseLinks} to="/reviews">REVIEWS</Link>
