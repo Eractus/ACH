@@ -1,6 +1,18 @@
+:root {
+  --font-family: 'Sorts Mill Goudy', serif;
+  --quotation-bef: "\275D";
+  --quotation-aft: "\275E";
+  --bullet-triangle: "\25B7";
+  --white: #ffffff;
+  --background-black: #282828;
+  --light-gray: #e5e4e2;
+  --dark-brown: #69564e;
+  --silver: #a8a7ae;
+}
+
 body {
   margin: 0px;
-  font-family: 'Sorts Mill Goudy', serif;
+  font-family: var(--font-family);
 }
 
 .darken-overlay {
@@ -99,10 +111,9 @@ body {
     background-image: url("../images/photostream6.jpg");
   }
 
-  /* no transitions for smaller screen sizes for performance reasons, so need both transitioned and non-transitioned class names to have same styling in case user changes window size after transition effect has changed class name */
   .splash-about-us {
-    background-color: #282828;
-    color: white;
+    background-color: var(--background-black);
+    color: var(--white);
     padding: 10%;
     letter-spacing: 1px;
   }
@@ -113,12 +124,16 @@ body {
     align-items: center;
   }
 
+  .splash-about-us > article > div {
+    overflow: hidden;
+  }
+
   .splash-about-us-text {
     margin-bottom: 8%
   }
 
   .splash-about-us-text > p:first-child {
-    color: white;
+    color: var(--white);
     margin: 0px;
     font-size: 30px;
     font-weight: 500;
@@ -126,7 +141,7 @@ body {
 
   .splash-about-us-text > p {
     font-size: 18px;
-    color: #e5e4e2;
+    color: var(--light-gray);
   }
 
   .splash-about-us-text-transitioned {
@@ -134,7 +149,7 @@ body {
   }
 
   .splash-about-us-text-transitioned > p:first-child {
-    color: white;
+    color: var(--white);
     margin: 0px;
     font-size: 30px;
     font-weight: 500;
@@ -142,7 +157,7 @@ body {
 
   .splash-about-us-text-transitioned > p {
     font-size: 18px;
-    color: #e5e4e2;
+    color: var(--light-gray);
   }
 
   .splash-about-us-photo {
@@ -177,7 +192,7 @@ body {
   }
 
   .splash-services > p {
-    color: white;
+    color: var(--white);
     text-align: center;
     margin-top: 0px;
     font-size: 30px;
@@ -185,7 +200,6 @@ body {
     z-index: 2;
   }
 
-  /* no transitions for smaller screen sizes for performance reasons */
   .splash-gallery {
     padding: 8% 8%;
     display: flex;
@@ -193,7 +207,7 @@ body {
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: #282828;
+    background-color: var(--background-black);
   }
 
   .splash-gallery-photos {
@@ -206,12 +220,7 @@ body {
     width: 320px;
     height: 200px;
     margin: 1%;
-  }
-
-  .splash-gallery-photos img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+    overflow: hidden;
   }
 
   .splash-gallery-photos-transitioned {
@@ -242,7 +251,7 @@ body {
   }
 
   .splash-gallery-text > p {
-    color: white;
+    color: var(--white);
     margin-bottom: 3%;
     font-size: 30px;
     font-weight: 500;
@@ -257,7 +266,7 @@ body {
   }
 
   .splash-gallery-text-transitioned > p {
-    color: white;
+    color: var(--white);
     margin-bottom: 3%;
     font-size: 30px;
     font-weight: 500;
@@ -268,7 +277,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: var(--white);
     background-image: url("../images/reviews.jpg");
     background-size: cover;
   }
@@ -289,28 +298,28 @@ body {
   }
 
   .splash-reviews-text > h5 {
-    color: #e5e4e2;
+    color: var(--light-gray);
     font-size: 22px;
     font-weight: 400;
     font-style: italic;
   }
 
   .splash-reviews-text > h5::before {
-    content: "\275D";
-    color: #69564e;
+    content: var(--quotation-bef);
+    color: var(--dark-brown);
     font-size: 28px;
     margin-right: 10px;
   }
 
   .splash-reviews-text > h5::after {
-    content: "\275E";
-    color: #69564e;
+    content: var(--quotation-aft);
+    color: var(--dark-brown);
     font-size: 28px;
     margin-left: 10px;
   }
 
   .splash-reviews-text > p {
-    color: #a8a7ae;
+    color: var(--silver);
     font-size: 14px;
     font-weight: 200;
   }
@@ -388,8 +397,8 @@ body {
   }
 
   .splash-about-us {
-    background-color: #282828;
-    color: white;
+    background-color: var(--background-black);
+    color: var(--white);
     padding: 10%;
     letter-spacing: 1px;
   }
@@ -400,48 +409,32 @@ body {
     align-items: center;
   }
 
+  .splash-about-us > article > div {
+    overflow: hidden;
+  }
+
   .splash-about-us-text {
-    visibility: hidden;
-  }
-
-  @keyframes splash-about-us-text {
-    to { transform: translateX(0); }
-  }
-
-  .splash-about-us-text-transitioned {
     margin-right: 10%;
-    transform: translateX(-100vw);
-    animation: splash-about-us-text 0.8s ease forwards;
   }
 
-  .splash-about-us-text-transitioned > p:first-child {
-    color: white;
+  .splash-about-us-text > p:first-child {
+    color: var(--white);
     margin-bottom: 15px;
     font-size: 50px;
     font-weight: 500;
   }
 
-  .splash-about-us-text-transitioned > p {
-    color: #e5e4e2;
+  .splash-about-us-text > p {
+    color: var(--light-gray);
     font-size: 22px;
   }
 
   .splash-about-us-photo {
-    visibility: hidden;
-  }
-
-  @keyframes splash-about-us-photo-transitioned {
-    to { transform: translateX(0); }
-  }
-
-  .splash-about-us-photo-transitioned {
     width: auto;
     height: auto;
-    transform: translateX(100vw);
-    animation: splash-about-us-photo-transitioned 0.8s ease forwards;
   }
 
-  .splash-about-us-photo-transitioned > img {
+  .splash-about-us-photo > img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -458,7 +451,7 @@ body {
   }
 
   .splash-services > p {
-    color: white;
+    color: var(--white);
     text-align: center;
     margin-top: 0px;
     font-size: 50px;
@@ -471,57 +464,32 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #282828;
+    background-color: var(--background-black);
   }
 
   .splash-gallery-photos {
-    visibility: hidden;
-  }
-
-  @keyframes splash-gallery-photos-transitioned {
-    to { transform: translateX(0); }
-  }
-
-  .splash-gallery-photos-transitioned {
     display: flex;
     flex-wrap: wrap;
     width: 50vw;
     margin-left: 5%;
     margin-right: 2%;
-    transform: translateX(-100vw);
-    animation: splash-gallery-photos-transitioned 0.8s ease forwards;
   }
 
-  .splash-gallery-photos-transitioned > div {
+  .splash-gallery-photos > div {
     width: 300px;
     height: 200px;
     margin: 1%;
+    overflow: hidden;
   }
 
-  .splash-gallery-photos-transitioned img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .splash-gallery-text-hidden {
-    visibility: hidden;
-  }
-
-  @keyframes splash-gallery-text-transitioned {
-    to { transform: translateX(0); }
-  }
-
-  .splash-gallery-text-transitioned {
+  .splash-gallery-text {
     display: flex;
     flex-direction: column;
     margin-right: 5%;
-    transform: translateX(100vw);
-    animation: splash-gallery-text-transitioned 0.8s ease forwards;
   }
 
-  .splash-gallery-text-transitioned > p {
-    color: white;
+  .splash-gallery-text > p {
+    color: var(--white);
     margin-top: 0px;
     font-size: 50px;
     font-weight: 500;
@@ -532,7 +500,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: var(--white);
     background-image: url("../images/reviews.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -554,28 +522,28 @@ body {
   }
 
   .splash-reviews-text > h5 {
-    color: #e5e4e2;
+    color: var(--light-gray);
     font-size: 28px;
     font-weight: 400;
     font-style: italic;
   }
 
   .splash-reviews-text > h5::before {
-    content: "\275D";
-    color: #69564e;
+    content: var(--quotation-bef);
+    color: var(--dark-brown);
     font-size: 42px;
     margin-right: 20px;
   }
 
   .splash-reviews-text > h5::after {
-    content: "\275E";
-    color: #69564e;
+    content: var(--quotation-aft);
+    color: var(--dark-brown);
     font-size: 42px;
     margin-left: 20px;
   }
 
   .splash-reviews-text > p {
-    color: #a8a7ae;
+    color: var(--silver);
     font-size: 18px;
     font-weight: 200;
   }
@@ -586,19 +554,19 @@ body {
 }
 
 .splash-button > button {
-  font-family: 'Sorts Mill Goudy', serif;
+  font-family: var(--font-family);
   font-size: 20px;
-  color: #a8a7ae;
+  color: var(--silver);
   padding: 15px 20px;
   border: none;
   border-radius: 5px;
   font-weight: 200;
-  background-color: #69564e;
+  background-color: var(--dark-brown);
   cursor: pointer;
 }
 
 .splash-button > button:hover {
-  color: #69564e;
-  background-color: #a8a7ae;
+  color: var(--dark-brown);
+  background-color: var(--silver);
   border-radius: 5px;
 }

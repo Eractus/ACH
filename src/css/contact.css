@@ -4,11 +4,11 @@
   }
 
   h2 {
-    color: white;
+    color: var(--white);
     margin-top: 0;
     font-size: 28px;
     font-weight: 400;
-    border-bottom: 2px solid #69564e;
+    border-bottom: 2px solid var(--dark-brown);
   }
 
   p {
@@ -17,10 +17,10 @@
 
   .contact-confirmation-modal {
     padding: 25px;
-    background-color: #282828;
-    color: white;
+    background-color: var(--background-black);
+    color: var(--white);
     font-size: 22px;
-    border: 1px solid white;
+    border: 1px solid var(--white);
     border-radius: 3px;
     display: flex;
     flex-direction: column;
@@ -28,19 +28,19 @@
   }
 
   .contact-confirmation-modal > button {
-    font-family: 'Sorts Mill Goudy', serif;
-    color: #a8a7ae;
+    font-family: var(--font-family);
+    color: var(--silver);
     padding: 8px 20px;
     border: none;
     border-radius: 5px;
     font-size: 14px;
-    background-color: #69564e;
+    background-color: var(--dark-brown);
     cursor: pointer;
   }
 
   .contact-confirmation-modal > button:hover {
-    color: #69564e;
-    background-color: #a8a7ae;
+    color: var(--dark-brown);
+    background-color: var(--silver);
   }
 
   .contact-main-wrapper {
@@ -48,8 +48,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #282828;
-    color: white;
+    background-color: var(--background-black);
+    color: var(--white);
     padding: 8%;
   }
 
@@ -67,19 +67,19 @@
   }
 
   .contact-form-input {
-    font-family: 'Sorts Mill Goudy', serif;
-    color: #e5e4e2;
+    font-family: var(--font-family);
+    color: var(--light-gray);
     font-weight: 200;
     padding: 2%;
     font-size: 22px;
-    background-color: #282828;
+    background-color: var(--background-black);
     border-width: thin;
-    border-color: white;
+    border-color: var(--white);
     margin: 9px 0;
   }
 
   .contact-form-input::placeholder {
-    color: #a8a7ae;
+    color: var(--silver);
     font-weight: 200;
   }
 
@@ -99,26 +99,26 @@
   }
 
   .contact-form-button {
-    font-family: 'Sorts Mill Goudy', serif;
+    font-family: var(--font-family);
     width: 180px;
     font-size: 22px;
-    color: #a8a7ae;
+    color: var(--silver);
     padding: 15px 20px;
     border: none;
     border-radius: 5px;
     font-weight: 200;
-    background-color: #69564e;
+    background-color: var(--dark-brown);
     cursor: pointer;
   }
 
   .contact-form-button:hover {
-    color: #69564e;
-    background-color: #a8a7ae;
+    color: var(--dark-brown);
+    background-color: var(--silver);
     border-radius: 5px;
   }
 
   .contact-static-info {
-    color: #e5e4e2;
+    color: var(--light-gray);
     font-size: 22px;
     display: flex;
     flex-direction: column;
@@ -140,11 +140,11 @@
   }
 
   h2 {
-    color: white;
+    color: var(--white);
     margin-top: 0;
     font-size: 28px;
     font-weight: 400;
-    border-bottom: 2px solid #69564e;
+    border-bottom: 2px solid var(--dark-brown);
   }
 
   p {
@@ -153,10 +153,10 @@
 
   .contact-confirmation-modal {
     padding: 25px;
-    background-color: #282828;
-    color: white;
+    background-color: var(--background-black);
+    color: var(--white);
     font-size: 22px;
-    border: 1px solid white;
+    border: 1px solid var(--white);
     border-radius: 3px;
     display: flex;
     flex-direction: column;
@@ -164,25 +164,25 @@
   }
 
   .contact-confirmation-modal > button {
-    font-family: 'Sorts Mill Goudy', serif;
-    color: #a8a7ae;
+    font-family: var(--font-family);
+    color: var(--silver);
     padding: 8px 20px;
     border: none;
     border-radius: 5px;
     font-size: 14px;
-    background-color: #69564e;
+    background-color: var(--dark-brown);
     cursor: pointer;
   }
 
   .contact-confirmation-modal > button:hover {
-    color: #69564e;
-    background-color: #a8a7ae;
+    color: var(--dark-brown);
+    background-color: var(--silver);
   }
 
   .contact-main-wrapper {
     display: flex;
     justify-content: space-around;
-    background-color: #282828;
+    background-color: var(--background-black);
     padding: 3% 5%;
   }
 
@@ -200,19 +200,19 @@
   }
 
   .contact-form-input {
-    font-family: 'Sorts Mill Goudy', serif;
-    color: #e5e4e2;
+    font-family: var(--font-family);
+    color: var(--light-gray);
     font-weight: 200;
     padding: 2%;
     font-size: 22px;
-    background-color: #282828;
+    background-color: var(--background-black);
     border-width: thin;
-    border-color: white;
+    border-color: var(--white);
     margin: 9px 0;
   }
 
   .contact-form-input::placeholder {
-    color: #a8a7ae;
+    color: var(--silver);
     font-weight: 200;
   }
 
@@ -228,26 +228,26 @@
   }
 
   .contact-form-button {
-    font-family: 'Sorts Mill Goudy', serif;
+    font-family: var(--font-family);
     width: 180px;
     font-size: 22px;
-    color: #a8a7ae;
+    color: var(--silver);
     padding: 15px 20px;
     border: none;
     border-radius: 5px;
     font-weight: 200;
-    background-color: #69564e;
+    background-color: var(--dark-brown);
     cursor: pointer;
   }
 
   .contact-form-button:hover {
-    color: #69564e;
-    background-color: #a8a7ae;
+    color: var(--dark-brown);
+    background-color: var(--silver);
     border-radius: 5px;
   }
 
   .contact-static-info {
-    color: #e5e4e2;
+    color: var(--light-gray);
     font-size: 22px;
     display: flex;
     flex-direction: column;
@@ -272,11 +272,11 @@
   }
 
   h2 {
-    color: white;
+    color: var(--white);
     margin-top: 0;
     font-size: 28px;
     font-weight: 400;
-    border-bottom: 2px solid #69564e;
+    border-bottom: 2px solid var(--dark-brown);
   }
 
   p {
@@ -285,10 +285,10 @@
 
   .contact-confirmation-modal {
     padding: 25px;
-    background-color: #282828;
-    color: white;
+    background-color: var(--background-black);
+    color: var(--white);
     font-size: 22px;
-    border: 1px solid white;
+    border: 1px solid var(--white);
     border-radius: 3px;
     display: flex;
     flex-direction: column;
@@ -296,26 +296,26 @@
   }
 
   .contact-confirmation-modal > button {
-    font-family: 'Sorts Mill Goudy', serif;
-    color: #a8a7ae;
+    font-family: var(--font-family);
+    color: var(--silver);
     padding: 8px 20px;
     border: none;
     border-radius: 5px;
     font-size: 14px;
-    background-color: #69564e;
+    background-color: var(--dark-brown);
     cursor: pointer;
   }
 
   .contact-confirmation-modal > button:hover {
-    color: #69564e;
-    background-color: #a8a7ae;
+    color: var(--dark-brown);
+    background-color: var(--silver);
   }
 
   .contact-main-wrapper {
     display: flex;
     justify-content: space-around;
-    background-color: #282828;
-    color: white;
+    background-color: var(--background-black);
+    color: var(--white);
     padding: 5% 8%;
   }
 
@@ -332,19 +332,19 @@
   }
 
   .contact-form-input {
-    font-family: 'Sorts Mill Goudy', serif;
-    color: #e5e4e2;
+    font-family: var(--font-family);
+    color: var(--light-gray);
     font-weight: 200;
     padding: 2%;
     font-size: 22px;
-    background-color: #282828;
+    background-color: var(--background-black);
     border-width: thin;
-    border-color: white;
+    border-color: var(--white);
     margin: 9px 0;
   }
 
   .contact-form-input::placeholder {
-    color: #a8a7ae;
+    color: var(--silver);
     font-weight: 200;
   }
 
@@ -360,26 +360,26 @@
   }
 
   .contact-form-button {
-    font-family: 'Sorts Mill Goudy', serif;
+    font-family: var(--font-family);
     width: 180px;
     font-size: 22px;
-    color: #a8a7ae;
+    color: var(--silver);
     padding: 15px 20px;
     border: none;
     border-radius: 5px;
     font-weight: 200;
-    background-color: #69564e;
+    background-color: var(--dark-brown);
     cursor: pointer;
   }
 
   .contact-form-button:hover {
-    color: #69564e;
-    background-color: #a8a7ae;
+    color: var(--dark-brown);
+    background-color: var(--silver);
     border-radius: 5px;
   }
 
   .contact-static-info {
-    color: #e5e4e2;
+    color: var(--light-gray);
     font-size: 22px;
     display: flex;
     flex-direction: column;

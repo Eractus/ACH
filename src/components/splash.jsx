@@ -1,56 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Photo from "./photo";
 
 class Splash extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      scrollTop: 0
-    }
-
-    this.handleScroll = this.handleScroll.bind(this);
-  }
-
   componentDidMount() {
     window.scrollTo(0, 0);
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll() {
-    const scrollPosition = document.documentElement.scrollTop;
-    this.setState({ scrollTop: scrollPosition })
-
-    // About Us section transitions
-    const aboutUs = document.getElementById("about-us");
-    const aboutUsText = document.getElementById("about-us-text");
-    const aboutUsPhoto = document.getElementById("about-us-photo");
-    if (!this.state.aboutUsTop || !this.state.aboutUsBot) {
-      let top = (aboutUs.offsetTop)/2.5;
-      let bot = top + aboutUs.offsetHeight;
-      this.setState({ aboutUsTop: top, aboutUsBot: bot });
-    }
-    if (this.state.scrollTop >= this.state.aboutUsTop && this.state.scrollTop <= this.state.aboutUsBot) {
-      aboutUsText.className = "splash-about-us-text-transitioned";
-      aboutUsPhoto.className = "splash-about-us-photo-transitioned";
-    }
-
-    // Gallery section transitions
-    const gallery = document.getElementById("gallery");
-    const galleryText = document.getElementById("gallery-text");
-    const galleryPhotos = document.getElementById("gallery-photos");
-    if (!this.state.galleryTop || !this.state.galleryBot) {
-      let top = (gallery.offsetTop)/2.5;
-      let bot = top + gallery.offsetHeight;
-      this.setState({ galleryTop: top, galleryBot: bot });
-    }
-    if (this.state.scrollTop >= this.state.galleryTop && this.state.scrollTop <= this.state.galleryBot) {
-      galleryText.className = "splash-gallery-text-transitioned";
-      galleryPhotos.className = "splash-gallery-photos-transitioned";
-    }
   }
 
   render() {
@@ -66,39 +20,29 @@ class Splash extends React.Component {
             <span className="darken-overlay"></span>
           </div>
         </section>
-        <section id="about-us" className="splash-about-us">
+        <section className="splash-about-us">
           <article>
-            <span id="about-us-text" className="splash-about-us-text">
+            <span className="splash-about-us-text">
               <p>What Inspires Us</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <Link className="splash-button" to="/about"><button>Learn More</button></Link>
             </span>
-            <div id="about-us-photo" className="splash-about-us-photo">
-              <img src="./images/chair1.jpg" />
-            </div>
+            <Photo photo="./images/chair1.jpg" />
           </article>
         </section>
         <section className="splash-services darken-overlay">
           <p>What We Specialize In</p>
           <Link className="splash-button" to="/services"><button>Our Services</button></Link>
         </section>
-        <section id="gallery" className="splash-gallery">
-          <div id="gallery-photos" className="splash-gallery-photos">
-            <div>
-              <img src="./images/chair3.jpg" />
-            </div>
-            <div>
-              <img src="./images/cutting1.jpg" />
-            </div>
-            <div>
-              <img src="./images/cutting3.jpg" />
-            </div>
-            <div>
-              <img src="./images/product2.jpg" />
-            </div>
+        <section className="splash-gallery">
+          <div className="splash-gallery-photos">
+            <Photo photo="./images/chair3.jpg" />
+            <Photo photo="./images/cutting1.jpg" />
+            <Photo photo="./images/cutting3.jpg" />
+            <Photo photo="./images/product2.jpg" />
           </div>
-          <div id="gallery-text"className="splash-gallery-text">
+          <div className="splash-gallery-text">
             <p>Take a Glimpse Inside Our Lab</p>
             <Link className="splash-button" to="/gallery"><button>See All</button></Link>
           </div>

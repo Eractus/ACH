@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #a8a7ae;
+  border-top: 1px solid var(--silver);
   padding: 10px;
-  background-color: white;
+  background-color: var(--white);
 }
 
 .footer-container > img {
@@ -37,6 +37,6 @@
 }
 
 .footer-social-media-link > img:hover {
-  background-color: #a8a7ae;
+  background-color: var(--silver);
   border-radius: 50%;
 }

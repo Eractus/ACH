@@ -10,23 +10,23 @@
     align-items: center;
     text-align: center;
     padding: 5% 10%;
-    background-color: #282828;
+    background-color: var(--background-black);
   }
 
   .team-main-wrapper h1 {
-    color: white;
+    color: var(--white);
     font-size: 38px;
     font-weight: 300;
   }
 
   .team-main-wrapper h3 {
-    color: #e5e4e2;
+    color: var(--light-gray);
     font-size: 24px;
     font-weight: 300;
   }
 
   .team-main-wrapper p {
-    color: white;
+    color: var(--white);
     font-size: 16px;
   }
 
@@ -57,23 +57,23 @@
     justify-content: center;
     align-items: center;
     padding: 5% 10%;
-    background-color: #282828;
+    background-color: var(--background-black);
   }
 
   .team-main-wrapper h1 {
-    color: white;
+    color: var(--white);
     font-size: 38px;
     font-weight: 300;
   }
 
   .team-main-wrapper h3 {
-    color: #e5e4e2;
+    color: var(--light-gray);
     font-size: 24px;
     font-weight: 300;
   }
 
   .team-main-wrapper p {
-    color: white;
+    color: var(--white);
     font-size: 16px;
   }
 
