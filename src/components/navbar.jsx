@@ -9,14 +9,6 @@ class Navbar extends React.Component {
     };
 
     this.toggleLinks = this.toggleLinks.bind(this);
-    this.collapseLinks = this.collapseLinks.bind(this);
-  }
-
-  collapseLinks() {
-    if (this.state.toggled) {
-      document.getElementById("toggle-navbar-links").className = "navbar-links";
-      this.setState({ toggled: false });
-    }
   }
 
   toggleLinks() {
