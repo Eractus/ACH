@@ -20,39 +20,44 @@ class Team extends React.Component {
   fetchIGData() {
     return new Promise((resolve, reject) => {
       let artistUrls = [
-        "https://www.instagram.com/p/fA9uwTtkSN/",
-        "https://www.instagram.com/p/BusBK6ahZ5Z/",
-        "https://www.instagram.com/p/BwxQkpKgHr6/",
-        "https://www.instagram.com/p/Bvm1REThEgX/"
+        "https://www.instagram.com/p/BuK9Y46A987/",
+        "https://www.instagram.com/p/BrssnLYhwUx/",
+        "https://www.instagram.com/p/BlrHAfYnMOu/",
+        "https://www.instagram.com/p/BuXyY8KHPfX/",
+        "https://www.instagram.com/p/Bt9D0TIg3DH/"
       ]
       let artistHTMLs = [];
-      fetch("https://api.instagram.com/oembed?url=" + artistUrls[0]).then(response => {
+      let igURL = "https://api.instagram.com/oembed?url=";
+      let optionalParams = "&hidecaption=true&omitscript=true";
+      let html;
+      fetch(`${igURL}${artistUrls[0]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
-        let html = this.partitionResponseHTML(data.html);
+        html = data.html;
         artistHTMLs.push(html);
-      }).then(fetch("https://api.instagram.com/oembed?url=" + artistUrls[1]).then(response => {
+      }).then(fetch(`${igURL}${artistUrls[1]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
-        let html = this.partitionResponseHTML(data.html);
+        html = data.html;
         artistHTMLs.push(html);
-      })).then(fetch("https://api.instagram.com/oembed?url=" + artistUrls[2]).then(response => {
+      })).then(fetch(`${igURL}${artistUrls[2]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
-        let html = this.partitionResponseHTML(data.html);
+        html = data.html;
         artistHTMLs.push(html);
-      })).then(fetch("https://api.instagram.com/oembed?url=" + artistUrls[3]).then(response => {
+      })).then(fetch(`${igURL}${artistUrls[3]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
-        let html = this.partitionResponseHTML(data.html);
+        html = data.html;
+        artistHTMLs.push(html);
+      })).then(fetch(`${igURL}${artistUrls[4]}${optionalParams}`).then(response => {
+        return response.json()
+      }).then(data => {
+        html = data.html;
         artistHTMLs.push(html);
         resolve(artistHTMLs);
       }))
     });
-  }
-
-  partitionResponseHTML(html) {
-    return html.slice(0, 6862);
   }
 
   embedArtist1Instagram(num) {
@@ -75,24 +80,48 @@ class Team extends React.Component {
             <h1>Meet Our Staff of Expert Stylists</h1>
             <section className="team-section-wrapper">
               <span className="team-artist-container">
-                <h3>Expert Artist 1</h3>
-                <p>Are ya ready kids? Aye, Aye captain! I can't heeeaaar yooouuu! AYE, AYE CAPTAIN! oooooooooooo.........Who lives in a pineapple under the sea? Sponge Bob Square Pants! Absorbent and yellow and porous is he. Sponge Bob Square Pants! If nautical nonsense be somethin' ya wish. Sponge Bob Square Pants! Then drop on the deck and flop like a fish. Sponge Bob Square Pants!</p>
+                <h3>Michelle Connelly</h3>
+                <h5>Specialty: Vivid Colors and Color Corrections</h5>
+                <p>Michelle has been coloring her friends hair since before she was a teenager. What sparked as a
+                childhood joy has quickly become her career cornerstone. She enjoys working with complex, vivid colors
+                and is at her best when pushing boundaries. Let Michelle bring your hair to life and work alongside your
+                creative vision today!</p>
                 <div dangerouslySetInnerHTML={this.embedArtist1Instagram(1)}></div>
               </span>
               <span className="team-artist-container">
-                <h3>Expert Artist 2</h3>
-                <p>Are ya ready kids? Aye, Aye captain! I can't heeeaaar yooouuu! AYE, AYE CAPTAIN! oooooooooooo.........Who lives in a pineapple under the sea? Sponge Bob Square Pants! Absorbent and yellow and porous is he. Sponge Bob Square Pants! If nautical nonsense be somethin' ya wish. Sponge Bob Square Pants! Then drop on the deck and flop like a fish. Sponge Bob Square Pants!</p>
+                <h3>Mikey Martinez</h3>
+                <h5>Specialty: Cut, Vivid Colors, and Color Corrections</h5>
+                <p>Mikey can do it all when it comes to hair. Hair is his passion and he has a knack for creativity that is
+                unrivaled in the community. He will always go the extra distance to ensure you leave Alchemy Collective
+                Hairlab happy with your look.</p>
                 <div dangerouslySetInnerHTML={this.embedArtist1Instagram(2)}></div>
               </span>
               <span className="team-artist-container">
-                <h3>Expert Artist 3</h3>
-                <p>Are ya ready kids? Aye, Aye captain! I can't heeeaaar yooouuu! AYE, AYE CAPTAIN! oooooooooooo.........Who lives in a pineapple under the sea? Sponge Bob Square Pants! Absorbent and yellow and porous is he. Sponge Bob Square Pants! If nautical nonsense be somethin' ya wish. Sponge Bob Square Pants! Then drop on the deck and flop like a fish. Sponge Bob Square Pants!</p>
+                <h3>Maria Moreno</h3>
+                <h5>Specialty: Precision Haircuts, Vivid Colors, and Color Corrections</h5>
+                <p>Maria has been a professional cosmetologist for over 6 years and specializes in coloring and
+                precision cuts. Never a stranger to working long hours, you’ll often find her going the extra mile to
+                ensure you’re happy and satisfied with your look! She has industry experience with just about every
+                coloring product available, and her years of experience will help narrow down the right color for you!</p>
                 <div dangerouslySetInnerHTML={this.embedArtist1Instagram(3)}></div>
               </span>
               <span className="team-artist-container">
-                <h3>Expert Artist 4</h3>
-                <p>Are ya ready kids? Aye, Aye captain! I can't heeeaaar yooouuu! AYE, AYE CAPTAIN! oooooooooooo.........Who lives in a pineapple under the sea? Sponge Bob Square Pants! Absorbent and yellow and porous is he. Sponge Bob Square Pants! If nautical nonsense be somethin' ya wish. Sponge Bob Square Pants! Then drop on the deck and flop like a fish. Sponge Bob Square Pants!</p>
+                <h3>Ryan O'Boyle</h3>
+                <h5>Specialty: Full Face Shave, Head Shave, Beard Trim, Skin Fade, Scissor Cut, Scissor into Fade, Classic and
+                Modern Styles</h5>
+                <p>Ryan has been in the industry for over 5 years and offers a breadth of services as a result. He works
+                in a very consultative manner and will make sure he understands what look you want to achieve and get
+                you there in a comfortable manner. His customer first approach makes him a staple for our men’s
+                clientele and you can rest assured that you’re in good hands with Ryan.</p>
                 <div dangerouslySetInnerHTML={this.embedArtist1Instagram(4)}></div>
+              </span>
+              <span className="team-artist-container">
+                <h3>Christina Pham</h3>
+                <h5>Specialty: Vivid Colors and Color Corrections</h5>
+                <p>You can often find Christina working into the late hours of the night on a color project that she
+                wants to get just right for her client. She will go that extra mile to ensure your color is simply perfection.
+                Blonde? Metallic? No problem. Book with Christina today for your desired look!</p>
+                <div dangerouslySetInnerHTML={this.embedArtist1Instagram(5)}></div>
               </span>
             </section>
           </main>
