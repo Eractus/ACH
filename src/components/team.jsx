@@ -5,7 +5,7 @@ class Team extends React.Component {
     super(props);
 
     this.state = {
-      artists: [],
+      artists: {},
       loading: true
     }
   }
@@ -27,43 +27,42 @@ class Team extends React.Component {
         "Ryan": "https://www.instagram.com/p/BuXyY8KHPfX/",
         "Christina": "https://www.instagram.com/p/Bt9D0TIg3DH/"
       }
-      let artistHTMLs = [];
+      let artistHTMLs = {};
       let igURL = "https://api.instagram.com/oembed?url=";
-      let optionalParams = "&maxwidth=400&hidecaption=true";
+      let optionalParams = "&maxwidth=500&hidecaption=true";
       let html;
       fetch(`${igURL}${artistUrls["Michelle"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
         html = data.html;
-        console.log(html);
-        artistHTMLs.push(html);
+        artistHTMLs["Michelle"] = html;
       }).then(fetch(`${igURL}${artistUrls["Mikey"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
         html = data.html;
-        artistHTMLs.push(html);
+        artistHTMLs["Mikey"] = html;
       })).then(fetch(`${igURL}${artistUrls["Maria"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
         html = data.html;
-        artistHTMLs.push(html);
+        artistHTMLs["Maria"] = html;
       })).then(fetch(`${igURL}${artistUrls["Ryan"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
         html = data.html;
-        artistHTMLs.push(html);
+        artistHTMLs["Ryan"] = html;
       })).then(fetch(`${igURL}${artistUrls["Christina"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
         html = data.html;
-        artistHTMLs.push(html);
+        artistHTMLs["Christina"] = html;
         resolve(artistHTMLs);
       }))
     });
   }
 
-  embedArtist1Instagram(num) {
-    let html = this.state.artists[num-1];
+  embedArtistInstagram(artist) {
+    let html = this.state.artists[artist];
     return (
       {__html: html}
     )
@@ -88,7 +87,7 @@ class Team extends React.Component {
                 childhood joy has quickly become her career cornerstone. She enjoys working with complex, vivid colors
                 and is at her best when pushing boundaries. Let Michelle bring your hair to life and work alongside your
                 creative vision today!</p>
-                <div dangerouslySetInnerHTML={this.embedArtist1Instagram(1)}></div>
+                <div dangerouslySetInnerHTML={this.embedArtistInstagram("Michelle")}></div>
               </span>
               <span className="team-artist-container">
                 <h3>Mikey Martinez</h3>
@@ -96,7 +95,7 @@ class Team extends React.Component {
                 <p>Mikey can do it all when it comes to hair. Hair is his passion and he has a knack for creativity that is
                 unrivaled in the community. He will always go the extra distance to ensure you leave Alchemy Collective
                 Hairlab happy with your look.</p>
-                <div dangerouslySetInnerHTML={this.embedArtist1Instagram(2)}></div>
+                <div dangerouslySetInnerHTML={this.embedArtistInstagram("Mikey")}></div>
               </span>
               <span className="team-artist-container">
                 <h3>Maria Moreno</h3>
@@ -105,7 +104,7 @@ class Team extends React.Component {
                 precision cuts. Never a stranger to working long hours, you’ll often find her going the extra mile to
                 ensure you’re happy and satisfied with your look! She has industry experience with just about every
                 coloring product available, and her years of experience will help narrow down the right color for you!</p>
-                <div dangerouslySetInnerHTML={this.embedArtist1Instagram(3)}></div>
+                <div dangerouslySetInnerHTML={this.embedArtistInstagram("Maria")}></div>
               </span>
               <span className="team-artist-container">
                 <h3>Ryan O'Boyle</h3>
@@ -115,7 +114,7 @@ class Team extends React.Component {
                 in a very consultative manner and will make sure he understands what look you want to achieve and get
                 you there in a comfortable manner. His customer first approach makes him a staple for our men’s
                 clientele and you can rest assured that you’re in good hands with Ryan.</p>
-                <div dangerouslySetInnerHTML={this.embedArtist1Instagram(4)}></div>
+                <div dangerouslySetInnerHTML={this.embedArtistInstagram("Ryan")}></div>
               </span>
               <span className="team-artist-container">
                 <h3>Christina Pham</h3>
@@ -123,7 +122,7 @@ class Team extends React.Component {
                 <p>You can often find Christina working into the late hours of the night on a color project that she
                 wants to get just right for her client. She will go that extra mile to ensure your color is simply perfection.
                 Blonde? Metallic? No problem. Book with Christina today for your desired look!</p>
-                <div dangerouslySetInnerHTML={this.embedArtist1Instagram(5)}></div>
+                <div dangerouslySetInnerHTML={this.embedArtistInstagram("Christina")}></div>
               </span>
             </section>
           </main>
