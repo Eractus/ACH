@@ -14,43 +14,45 @@ class Team extends React.Component {
     window.scrollTo(0, 0);
     this.fetchIGData().then((artistHTMLs) => {
       this.setState({ artists: artistHTMLs, loading: false })
+      window.instgrm.Embeds.process();
     });
   }
 
   fetchIGData() {
     return new Promise((resolve, reject) => {
-      let artistUrls = [
-        "https://www.instagram.com/p/BuK9Y46A987/",
-        "https://www.instagram.com/p/BrssnLYhwUx/",
-        "https://www.instagram.com/p/BlrHAfYnMOu/",
-        "https://www.instagram.com/p/BuXyY8KHPfX/",
-        "https://www.instagram.com/p/Bt9D0TIg3DH/"
-      ]
+      let artistUrls = {
+        "Michelle": "https://www.instagram.com/p/BuK9Y46A987/",
+        "Mikey": "https://www.instagram.com/p/BrssnLYhwUx/",
+        "Maria": "https://www.instagram.com/p/BlrHAfYnMOu/",
+        "Ryan": "https://www.instagram.com/p/BuXyY8KHPfX/",
+        "Christina": "https://www.instagram.com/p/Bt9D0TIg3DH/"
+      }
       let artistHTMLs = [];
       let igURL = "https://api.instagram.com/oembed?url=";
-      let optionalParams = "&hidecaption=true&omitscript=true";
+      let optionalParams = "&maxwidth=400&hidecaption=true";
       let html;
-      fetch(`${igURL}${artistUrls[0]}${optionalParams}`).then(response => {
+      fetch(`${igURL}${artistUrls["Michelle"]}${optionalParams}`).then(response => {
+        return response.json()
+      }).then(data => {
+        html = data.html;
+        console.log(html);
+        artistHTMLs.push(html);
+      }).then(fetch(`${igURL}${artistUrls["Mikey"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
         html = data.html;
         artistHTMLs.push(html);
-      }).then(fetch(`${igURL}${artistUrls[1]}${optionalParams}`).then(response => {
+      })).then(fetch(`${igURL}${artistUrls["Maria"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
         html = data.html;
         artistHTMLs.push(html);
-      })).then(fetch(`${igURL}${artistUrls[2]}${optionalParams}`).then(response => {
+      })).then(fetch(`${igURL}${artistUrls["Ryan"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
         html = data.html;
         artistHTMLs.push(html);
-      })).then(fetch(`${igURL}${artistUrls[3]}${optionalParams}`).then(response => {
-        return response.json()
-      }).then(data => {
-        html = data.html;
-        artistHTMLs.push(html);
-      })).then(fetch(`${igURL}${artistUrls[4]}${optionalParams}`).then(response => {
+      })).then(fetch(`${igURL}${artistUrls["Christina"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
         html = data.html;
