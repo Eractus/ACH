@@ -3,6 +3,14 @@ h1, h3, h5 {
 }
 
 @media only screen and (max-width: 992px) {
+  .team-loading {
+    padding: 25px;
+    height: 100vh;
+    font-size: 25px;
+    color: var(--white);
+    background-color: var(--background-black);
+  }
+
   .team-container {
     flex: 1 0 auto;
   }

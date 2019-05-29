@@ -37,12 +37,12 @@ class Navbar extends React.Component {
           <img src="./images/ACH-decal.png" />
         </Link>
         <div id="toggle-navbar-links" className="navbar-links">
-          <Link onClick={this.collapseLinks} to="/">HOME</Link>
-          <Link onClick={this.collapseLinks} to="/team">OUR TEAM</Link>
-          <Link onClick={this.collapseLinks} to="/services">SERVICES</Link>
-          <Link onClick={this.collapseLinks} to="/gallery">GALLERY</Link>
-          <Link onClick={this.collapseLinks} to="/reviews">REVIEWS</Link>
-          <Link onClick={this.collapseLinks} to="/contact">CONTACT</Link>
+          <Link onClick={this.toggleLinks} to="/">HOME</Link>
+          <Link onClick={this.toggleLinks} to="/team">OUR TEAM</Link>
+          <Link onClick={this.toggleLinks} to="/services">SERVICES</Link>
+          <Link onClick={this.toggleLinks} to="/gallery">GALLERY</Link>
+          <Link onClick={this.toggleLinks} to="/reviews">REVIEWS</Link>
+          <Link onClick={this.toggleLinks} to="/contact">CONTACT</Link>
         </div>
         <Link className="navbar-contact-number" to="/contact">714-706-2948</Link>
         {menuIcon}

@@ -78,7 +78,7 @@ class Team extends React.Component {
 
   render() {
     if (this.state.loading) {
-      return <div>Loading...</div>
+      return <div className="team-loading">Loading...</div>
     } else {
       return (
         <div className="team-container">
