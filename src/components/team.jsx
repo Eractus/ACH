@@ -18,8 +18,8 @@ class Team extends React.Component {
     });
   }
 
-  fetchIGData() {
-    return new Promise((resolve, reject) => {
+  async fetchIGData() {
+    let igData = new Promise((resolve, reject) => {
       let artistUrls = {
         "Michelle": "https://www.instagram.com/p/BuK9Y46A987/",
         "Mikey": "https://www.instagram.com/p/BrssnLYhwUx/",
@@ -28,37 +28,75 @@ class Team extends React.Component {
         "Christina": "https://www.instagram.com/p/Bt9D0TIg3DH/"
       }
       let artistHTMLs = {};
-      let igURL = "https://api.instagram.com/oembed?url=";
+      let apiURL = "https://api.instagram.com/oembed?url=";
       let optionalParams = "&maxwidth=500&hidecaption=true";
-      let html;
-      fetch(`${igURL}${artistUrls["Michelle"]}${optionalParams}`).then(response => {
+      // let html;
+
+      let promise1 = fetch(`${apiURL}${artistUrls["Michelle"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
-        html = data.html;
-        artistHTMLs["Michelle"] = html;
-      }).then(fetch(`${igURL}${artistUrls["Mikey"]}${optionalParams}`).then(response => {
+        return ["Michelle", data.html];
+      })
+      let promise2 = fetch(`${apiURL}${artistUrls["Mikey"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
-        html = data.html;
-        artistHTMLs["Mikey"] = html;
-      })).then(fetch(`${igURL}${artistUrls["Maria"]}${optionalParams}`).then(response => {
+        return ["Mikey", data.html];
+      })
+      let promise3 = fetch(`${apiURL}${artistUrls["Maria"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
-        html = data.html;
-        artistHTMLs["Maria"] = html;
-      })).then(fetch(`${igURL}${artistUrls["Ryan"]}${optionalParams}`).then(response => {
+        return ["Maria", data.html];
+      })
+      let promise4 = fetch(`${apiURL}${artistUrls["Ryan"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
-        html = data.html;
-        artistHTMLs["Ryan"] = html;
-      })).then(fetch(`${igURL}${artistUrls["Christina"]}${optionalParams}`).then(response => {
+        return ["Ryan", data.html];
+      })
+      let promise5 = fetch(`${apiURL}${artistUrls["Christina"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
-        html = data.html;
-        artistHTMLs["Christina"] = html;
+        return ["Christina", data.html];
+      })
+
+      Promise.all([promise1, promise2, promise3, promise4, promise5]).then(htmls => {
+        htmls.forEach(html => {
+          artistHTMLs[html[0]] = html[1];
+        })
+
         resolve(artistHTMLs);
-      }))
+      })
+
+      // fetch(`${apiURL}${artistUrls["Michelle"]}${optionalParams}`).then(response => {
+      //   return response.json()
+      // }).then(data => {
+      //   html = data.html;
+      //   artistHTMLs["Michelle"] = html;
+      // }).then(fetch(`${apiURL}${artistUrls["Mikey"]}${optionalParams}`).then(response => {
+      //   return response.json()
+      // }).then(data => {
+      //   html = data.html;
+      //   artistHTMLs["Mikey"] = html;
+      // })).then(fetch(`${apiURL}${artistUrls["Maria"]}${optionalParams}`).then(response => {
+      //   return response.json()
+      // }).then(data => {
+      //   html = data.html;
+      //   artistHTMLs["Maria"] = html;
+      // })).then(fetch(`${apiURL}${artistUrls["Ryan"]}${optionalParams}`).then(response => {
+      //   return response.json()
+      // }).then(data => {
+      //   html = data.html;
+      //   artistHTMLs["Ryan"] = html;
+      // })).then(fetch(`${apiURL}${artistUrls["Christina"]}${optionalParams}`).then(response => {
+      //   return response.json()
+      // }).then(data => {
+      //   html = data.html;
+      //   artistHTMLs["Christina"] = html;
+      //   resolve(artistHTMLs);
+      // }))
     });
+
+    let data = await igData;
+    return data;
   }
 
   embedArtistInstagram(artist) {
