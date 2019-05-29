@@ -121,7 +121,9 @@ body {
   .splash-about-us > article {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .splash-about-us > article > div {
@@ -132,54 +134,10 @@ body {
     margin-bottom: 8%
   }
 
-  .splash-about-us-text > p:first-child {
-    color: var(--white);
-    margin: 0px;
-    font-size: 30px;
-    font-weight: 500;
-  }
-
   .splash-about-us-text > p {
-    font-size: 18px;
-    color: var(--light-gray);
-  }
-
-  .splash-about-us-text-transitioned {
-    margin-bottom: 8%
-  }
-
-  .splash-about-us-text-transitioned > p:first-child {
     color: var(--white);
-    margin: 0px;
     font-size: 30px;
     font-weight: 500;
-  }
-
-  .splash-about-us-text-transitioned > p {
-    font-size: 18px;
-    color: var(--light-gray);
-  }
-
-  .splash-about-us-photo {
-    width: auto;
-    height: auto;
-  }
-
-  .splash-about-us-photo > img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-
-  .splash-about-us-photo-transitioned {
-    width: auto;
-    height: auto;
-  }
-
-  .splash-about-us-photo-transitioned > img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
   }
 
   .splash-services {
@@ -222,25 +180,6 @@ body {
     margin: 1%;
     overflow: hidden;
   }
-
-  .splash-gallery-photos-transitioned {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 8%;
-  }
-
-  .splash-gallery-photos-transitioned > div {
-    width: 320px;
-    height: 200px;
-    margin: 1%;
-  }
-
-  .splash-gallery-photos-transitioned img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-
 
   .splash-gallery-text {
     display: flex;
@@ -410,6 +349,8 @@ body {
   }
 
   .splash-about-us > article > div {
+    height: auto;
+    width: 35%;
     overflow: hidden;
   }
 
@@ -417,27 +358,11 @@ body {
     margin-right: 10%;
   }
 
-  .splash-about-us-text > p:first-child {
+  .splash-about-us-text > p {
     color: var(--white);
     margin-bottom: 15px;
     font-size: 50px;
     font-weight: 500;
-  }
-
-  .splash-about-us-text > p {
-    color: var(--light-gray);
-    font-size: 22px;
-  }
-
-  .splash-about-us-photo {
-    width: auto;
-    height: auto;
-  }
-
-  .splash-about-us-photo > img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
   }
 
   .splash-services {

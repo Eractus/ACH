@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Route, Redirect, Switch} from 'react-router-dom';
 import Navbar from "./components/navbar";
 import Splash from "./components/splash";
-import About from "./components/about";
 import Team from "./components/team";
 import Services from "./components/services";
 import Gallery from "./components/gallery";
@@ -16,7 +15,6 @@ class App extends Component {
       <div>
         <Navbar />
         <Switch>
-          <Route path="/about" component={About} />
           <Route path="/team" component={Team} />
           <Route path="/services" component={Services} />
           <Route path="/gallery" component={Gallery} />
