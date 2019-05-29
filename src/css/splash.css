@@ -271,7 +271,7 @@ body {
 
   .splash-photostream {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
   }
 
   .splash-photostream-images {
@@ -361,7 +361,7 @@ body {
   .splash-about-us-text > p {
     color: var(--white);
     margin-bottom: 15px;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 500;
   }
 

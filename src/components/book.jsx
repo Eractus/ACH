@@ -1,6 +1,6 @@
 import React from "react";
 
-class Team extends React.Component {
+class BookAppointment extends React.Component {
   constructor(props) {
     super(props);
 
@@ -83,10 +83,10 @@ class Team extends React.Component {
       return (
         <div className="team-container">
           <header className="header darken-overlay">
-            <p>OUR TEAM</p>
+            <p>BOOK APPOINTMENT</p>
           </header>
           <main className="team-main-wrapper">
-            <h1>Meet Our Staff of Expert Stylists</h1>
+            <h1>Select Your Stylist and Book Directly through Instagram</h1>
             <section className="team-section-wrapper">
               <span className="team-artist-container">
                 <h3>Michelle Connelly</h3>
@@ -140,4 +140,4 @@ class Team extends React.Component {
   }
 }
 
-export default Team;
+export default BookAppointment;

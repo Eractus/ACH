@@ -13,27 +13,27 @@ class Reviews extends React.Component {
         </header>
         <main className="reviews-main-wrapper">
           <section className="reviews-section-wrapper">
-            <h3>If we rocked your hair world, tag our stylist and share your photo and experience on Instagram!</h3>
+            <h3>Here's Some Love We've Received on Social Media - We Appreciate It!</h3>
             <ul className="reviews-list">
               <li className="reviews-list-item">
-                <h5>Kefka is the man! 5/5 stars!!!</h5>
-                <p>-Ameer A.</p>
+                <h5>Mikey messaged me after my not so delightful experience with a very honest and and genuinely concerned message ... did hair magic on my hair! ... Definitely recommend going to Mikey if you're looking to get services done here!</h5>
+                <p>-Patty P.</p>
               </li>
               <li className="reviews-list-item">
-                <h5>The ACH team has winning members. Highly recommended!</h5>
-                <p>-Jon W.</p>
+                <h5>This salon is right in the corner of the plaza! ... I booked an appointment with Christina. Lemme tell you, she really cares about her clients! ... I'm soooo pleased with the results!...</h5>
+                <p>-Kathy N.</p>
               </li>
               <li className="reviews-list-item">
-                <h5>I went in a mess, and Sephiroth cleaned me right up. Couldn't be happier!</h5>
-                <p>-Cloud S.</p>
+                <h5>... more than 5 stars that's what i'd give michelle! ... overall a great person and hair stylist! i recommend her to everyone i meet!!</h5>
+                <p>-Becca P.</p>
               </li>
               <li className="reviews-list-item">
-                <h5>Misty was a professional from beginning to end, ask for her. You won't regret it.</h5>
-                <p>-Ash K.</p>
+                <h5>My new go to hair salon. This place is roomy ... Mikey knows how give the perfect cut every time.</h5>
+                <p>-Randy M.</p>
               </li>
               <li className="reviews-list-item">
-                <h5>Showed Kefka what I wanted, and he quite literally cloned it above my hairline.</h5>
-                <p>-Kevin M.</p>
+                <h5>Ask for Ryan!  I took my two teenage boys ... impressed and we'll be back!</h5>
+                <p>-Mike Z.</p>
               </li>
             </ul>
           </section>
