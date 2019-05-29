@@ -30,69 +30,39 @@ class Team extends React.Component {
       let artistHTMLs = {};
       let apiURL = "https://api.instagram.com/oembed?url=";
       let optionalParams = "&maxwidth=500&hidecaption=true";
-      // let html;
 
-      let promise1 = fetch(`${apiURL}${artistUrls["Michelle"]}${optionalParams}`).then(response => {
+      let artist1 = fetch(`${apiURL}${artistUrls["Michelle"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
         return ["Michelle", data.html];
       })
-      let promise2 = fetch(`${apiURL}${artistUrls["Mikey"]}${optionalParams}`).then(response => {
+      let artist2 = fetch(`${apiURL}${artistUrls["Mikey"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
         return ["Mikey", data.html];
       })
-      let promise3 = fetch(`${apiURL}${artistUrls["Maria"]}${optionalParams}`).then(response => {
+      let artist3 = fetch(`${apiURL}${artistUrls["Maria"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
         return ["Maria", data.html];
       })
-      let promise4 = fetch(`${apiURL}${artistUrls["Ryan"]}${optionalParams}`).then(response => {
+      let artist4 = fetch(`${apiURL}${artistUrls["Ryan"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
         return ["Ryan", data.html];
       })
-      let promise5 = fetch(`${apiURL}${artistUrls["Christina"]}${optionalParams}`).then(response => {
+      let artist5 = fetch(`${apiURL}${artistUrls["Christina"]}${optionalParams}`).then(response => {
         return response.json()
       }).then(data => {
         return ["Christina", data.html];
       })
 
-      Promise.all([promise1, promise2, promise3, promise4, promise5]).then(htmls => {
+      Promise.all([artist1, artist2, artist3, artist4, artist5]).then(htmls => {
         htmls.forEach(html => {
           artistHTMLs[html[0]] = html[1];
         })
-
         resolve(artistHTMLs);
       })
-
-      // fetch(`${apiURL}${artistUrls["Michelle"]}${optionalParams}`).then(response => {
-      //   return response.json()
-      // }).then(data => {
-      //   html = data.html;
-      //   artistHTMLs["Michelle"] = html;
-      // }).then(fetch(`${apiURL}${artistUrls["Mikey"]}${optionalParams}`).then(response => {
-      //   return response.json()
-      // }).then(data => {
-      //   html = data.html;
-      //   artistHTMLs["Mikey"] = html;
-      // })).then(fetch(`${apiURL}${artistUrls["Maria"]}${optionalParams}`).then(response => {
-      //   return response.json()
-      // }).then(data => {
-      //   html = data.html;
-      //   artistHTMLs["Maria"] = html;
-      // })).then(fetch(`${apiURL}${artistUrls["Ryan"]}${optionalParams}`).then(response => {
-      //   return response.json()
-      // }).then(data => {
-      //   html = data.html;
-      //   artistHTMLs["Ryan"] = html;
-      // })).then(fetch(`${apiURL}${artistUrls["Christina"]}${optionalParams}`).then(response => {
-      //   return response.json()
-      // }).then(data => {
-      //   html = data.html;
-      //   artistHTMLs["Christina"] = html;
-      //   resolve(artistHTMLs);
-      // }))
     });
 
     let data = await igData;
