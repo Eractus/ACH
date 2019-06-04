@@ -1,5 +1,6 @@
-h1, h3, h5 {
+h1, h3, h4, h5 {
   margin-top: 0;
+  font-weight: 300;
 }
 
 .team-loading {
@@ -28,20 +29,22 @@ h1, h3, h5 {
   .team-main-wrapper h1 {
     color: var(--white);
     font-size: 38px;
-    font-weight: 300;
   }
 
   .team-main-wrapper h3 {
     color: var(--light-gray);
     font-size: 24px;
-    font-weight: 300;
     text-decoration: underline;
+  }
+
+  .team-main-wrapper h4 {
+    color: var(--white);
+    font-size: 22px;
   }
 
   .team-main-wrapper h5 {
     color: var(--light-gray);
     font-size: 19px;
-    font-weight: 200;
     font-style: italic;
   }
 
@@ -89,19 +92,21 @@ h1, h3, h5 {
   .team-main-wrapper h1 {
     color: var(--white);
     font-size: 38px;
-    font-weight: 300;
   }
 
   .team-main-wrapper h3 {
     color: var(--light-gray);
     font-size: 24px;
-    font-weight: 300;
     text-decoration: underline;
+  }
+
+  .team-main-wrapper h4 {
+    color: var(--white);
+    font-size: 22px;
   }
 
   .team-main-wrapper h5 {
     color: var(--light-gray);
-    font-weight: 200;
     font-size: 19px;
     font-style: italic;
   }

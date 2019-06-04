@@ -90,6 +90,7 @@ class BookAppointment extends React.Component {
             <section className="team-section-wrapper">
               <span className="team-artist-container">
                 <h3>Michelle Connelly</h3>
+                <h4>Tel: (562)-472-5043</h4>
                 <h5>Specialty: Vivid Colors and Color Corrections</h5>
                 <p>Michelle has been coloring her friends hair since before she was a teenager. What sparked as a
                 childhood joy has quickly become her career cornerstone. She enjoys working with complex, vivid colors
@@ -99,6 +100,7 @@ class BookAppointment extends React.Component {
               </span>
               <span className="team-artist-container">
                 <h3>Mikey Martinez</h3>
+                <h4>Tel: (714)-474-1207</h4>
                 <h5>Specialty: Cut, Vivid Colors, and Color Corrections</h5>
                 <p>Mikey can do it all when it comes to hair. Hair is his passion and he has a knack for creativity that is
                 unrivaled in the community. He will always go the extra distance to ensure you leave Alchemy Collective
@@ -107,6 +109,7 @@ class BookAppointment extends React.Component {
               </span>
               <span className="team-artist-container">
                 <h3>Maria Moreno</h3>
+                <h4>Tel: (714)-472-5473</h4>
                 <h5>Specialty: Precision Haircuts, Vivid Colors, and Color Corrections</h5>
                 <p>Maria has been a professional cosmetologist for over 6 years and specializes in coloring and
                 precision cuts. Never a stranger to working long hours, you’ll often find her going the extra mile to
@@ -116,6 +119,7 @@ class BookAppointment extends React.Component {
               </span>
               <span className="team-artist-container">
                 <h3>Ryan O'Boyle</h3>
+                <h4>Tel: (714)-322-5092</h4>
                 <h5>Specialty: Full Face Shave, Head Shave, Beard Trim, Skin Fade, Scissor Cut, Scissor into Fade, Classic and
                 Modern Styles</h5>
                 <p>Ryan has been in the industry for over 5 years and offers a breadth of services as a result. He works
@@ -126,6 +130,7 @@ class BookAppointment extends React.Component {
               </span>
               <span className="team-artist-container">
                 <h3>Christina Pham</h3>
+                <h4>Tel: (714)-251-9532</h4>
                 <h5>Specialty: Vivid Colors and Color Corrections</h5>
                 <p>You can often find Christina working into the late hours of the night on a color project that she
                 wants to get just right for her client. She will go that extra mile to ensure your color is simply perfection.
