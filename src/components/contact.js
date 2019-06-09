@@ -18,7 +18,8 @@ export default class Contact extends Component {
 
   componentDidMount() {
     this.contactRef.current.focus();
-    this.contactRef.current.parentElement.parentElement.parentElement.scrollIntoView();
+    const container = document.querySelector(".contact-container");
+    container.scrollIntoView();
   }
 
   handleSubmit(e) {
