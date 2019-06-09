@@ -10,12 +10,15 @@ export default class Contact extends Component {
     displayConfirmationModal: false
   };
 
+  contactRef = React.createRef();
+
   handleSubmit = this.handleSubmit.bind(this);
   update = this.update.bind(this);
   closeConfirmationModal = this.closeConfirmationModal.bind(this);
 
   componentDidMount() {
-    window.scrollTo(0, 0);
+    this.contactRef.current.focus();
+    this.contactRef.current.parentElement.parentElement.parentElement.scrollIntoView();
   }
 
   handleSubmit(e) {
@@ -97,6 +100,7 @@ export default class Contact extends Component {
           <form className="contact-form" onSubmit={this.handleSubmit}>
             <h2>Contact Us</h2>
             <input
+              ref={this.contactRef}
               className="contact-form-input"
               type="text"
               value={this.state.senderName}
