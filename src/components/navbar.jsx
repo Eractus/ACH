@@ -23,13 +23,13 @@ class Navbar extends React.Component {
 
   render() {
     const menuIcon = (this.state.toggled) ?
-      <img onClick={this.toggleLinks} className="navbar-menu-icon" src="./images/collapse.png" /> :
-      <img onClick={this.toggleLinks} className="navbar-menu-icon" src="./images/hamburger.png" />
+      <img onClick={this.toggleLinks} className="navbar-menu-icon" src="./images/collapse.png" alt="Menu Close"/> :
+      <img onClick={this.toggleLinks} className="navbar-menu-icon" src="./images/hamburger.png" alt="Menu Hamburger"/>
 
     return (
       <nav className="navbar-container">
         <Link className="navbar-logo" to="/">
-          <img src="./images/ACH-decal.png" />
+          <img src="./images/ACH-decal.png" alt="ACH Decal Logo"/>
         </Link>
         <div id="toggle-navbar-links" className="navbar-links">
           <Link onClick={this.toggleLinks} to="/">HOME</Link>
