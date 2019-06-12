@@ -1,45 +1,32 @@
 /* header shared across all pages except splash */
-@media only screen and (max-width: 600px) {
-  .header {
-    background-image: url("../images/header.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
-    height: 150px;
-    width: 100%;
-    position: relative;
-    border-bottom: 1px solid var(--silver);
-  }
+.header {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid var(--silver);
+}
 
-  .header > p {
-    margin: 0;
-    color: var(--white);
-    font-size: 25px;
-    text-shadow: 2px 2px 4px black;
-    z-index: 2;
-    position: absolute;
-    left: 35px;
-    bottom: 25px;
-  }
+.header > p {
+  margin: 0;
+  color: var(--white);
+  font-size: 25px;
+  text-shadow: 2px 2px 4px black;
+  z-index: 2;
+  position: absolute;
+  left: 35px;
+  bottom: 25px;
 }
 
 @media only screen and (min-width: 600px) {
   .header {
-    background-image: url("../images/header.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
     height: 250px;
-    width: 100%;
-    position: relative;
-    border-bottom: 1px solid var(--silver);
   }
 
   .header > p {
-    margin: 0;
-    color: var(--white);
     font-size: 30px;
-    text-shadow: 2px 2px 4px black;
-    z-index: 2;
-    position: absolute;
     left: 45px;
     bottom: 55px;
   }
@@ -47,97 +34,72 @@
 
 @media only screen and (min-width: 992px) {
   .header {
-    background-image: url("../images/header.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
     height: 400px;
-    width: 100vw;
-    position: relative;
-    border-bottom: 1px solid var(--silver);
-    background-attachment: fixed;
   }
 
   .header > p {
-    margin: 0;
-    color: var(--white);
     font-size: 45px;
-    text-shadow: 2px 2px 4px black;
-    z-index: 2;
-    position: absolute;
     left: 75px;
     bottom: 88px;
   }
 }
 
-@media only screen and (max-width: 992px) {
-  .about-container {
-    width: 100vw;
-    flex: 1 0 auto;
-  }
+.about-container {
+  width: 100vw;
+  flex: 1 0 auto;
+}
 
-  .about-main-wrapper {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--background-black);
-    color: var(--light-gray);
-    font-size: 18px;
-    padding: 8%;
-    width: 84%;
-  }
+.about-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-black);
+  color: var(--light-gray);
+  font-size: 18px;
+  padding: 8%;
+  width: 84%;
+}
 
-  .about-sections-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-  }
+.about-sections-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
 
-  .about-sections-wrapper > div {
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    overflow: hidden;
-  }
+.about-sections-wrapper > div {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  overflow: hidden;
+}
 
-  .about-blurb-with-title > h3 {
-    color: var(--white);
-    margin: 0;
-    font-size: 35px;
-  }
+.about-blurb-with-title > h3 {
+  color: var(--white);
+  margin: 0;
+  font-size: 35px;
+}
 
-  .about-sections-wrapper > p {
-    margin-top: 5%;
-    margin-bottom: 0;
-  }
+.about-sections-wrapper > p {
+  margin-top: 5%;
+  margin-bottom: 0;
 }
 
 @media only screen and (min-width: 992px) {
   .about-container {
-    width: 100vw;
     margin-top: 170px;
-    flex: 1 0 auto;
   }
 
   .about-main-wrapper {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--background-black);
-    color: var(--light-gray);
     font-size: 22px;
-    padding: 8%;
   }
 
   .about-sections-wrapper {
-    display: flex;
     justify-content: space-between;
-    margin-top: 25px;
   }
 
   .about-sections-wrapper > div {
     width: 40%;
     height: 35%;
-    background-size: cover;
     margin-right: 2%;
-    overflow: hidden;
   }
 
   .about-blurb-with-title {
@@ -145,8 +107,6 @@
   }
 
   .about-blurb-with-title > h3 {
-    color: var(--white);
-    margin: 0;
     font-size: 45px;
   }
 

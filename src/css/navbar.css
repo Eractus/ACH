@@ -1,152 +1,113 @@
-@media only screen and (max-width: 992px) {
-  .navbar-container {
-    width: calc(100vw - 80px);
-    background-image: url("../images/navbar.jpg");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-    border-bottom: 1px solid var(--silver);
-    position: relative;
-    z-index: 5;
-  }
+.navbar-container {
+  width: calc(100vw - 80px);
+  background-image: url("../images/navbar.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border-bottom: 1px solid var(--silver);
+  position: relative;
+  z-index: 5;
+}
 
-  .navbar-logo {
-    height: 100%;
-    margin-bottom: 14px;
-  }
+.navbar-logo {
+  height: 100%;
+  margin-bottom: 14px;
+}
 
-  .navbar-logo > img {
-    width: auto;
-    height: 250px;
-  }
+.navbar-logo > img {
+  width: auto;
+  height: 250px;
+}
 
-  .navbar-links {
-    visibility: hidden;
-    width: 0;
-    height: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 14px;
-    letter-spacing: 1px;
-    margin-left: none;
-    padding-left: none;
-    margin-bottom: 14px;
-  }
+.navbar-links {
+  visibility: hidden;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-left: none;
+  padding-left: none;
+  margin-bottom: 14px;
+}
 
-  .navbar-links > a {
-    color: var(--white);
-    margin-bottom: 14px;
-    text-decoration: none;
-  }
+.navbar-links > a {
+  color: var(--white);
+  margin-bottom: 14px;
+  text-decoration: none;
+}
 
-  .navbar-links > a:hover {
-    color: var(--silver);
-    border-bottom: 2px solid var(--dark-brown);
-  }
+.navbar-links > a:hover {
+  color: var(--silver);
+  border-bottom: 2px solid var(--dark-brown);
+}
 
-  .show-navbar-links {
-    visibility: visible;
-    width: auto;
-    height: auto;
-  }
+.show-navbar-links {
+  visibility: visible;
+  width: auto;
+  height: auto;
+}
 
-  .navbar-contact-number {
-    font-size: 24px;
-    text-decoration: none;
-    margin: 0;
-    color: var(--white);
-    background-color: black;
-    letter-spacing: 1px;
-    padding: 8px;
-    border-radius: 20px;
-  }
+.navbar-contact-number {
+  font-size: 24px;
+  text-decoration: none;
+  margin: 0;
+  color: var(--white);
+  background-color: black;
+  letter-spacing: 1px;
+  padding: 8px;
+  border-radius: 20px;
+}
 
-  .navbar-contact-number:hover {
-    border: 1px solid black;
-    color: black;
-    background-color: var(--white);
-  }
+.navbar-contact-number:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: var(--white);
+}
 
-  .navbar-menu-icon {
-    visibility: visible;
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    cursor: pointer;
-  }
+.navbar-menu-icon {
+  visibility: visible;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 992px) {
   .navbar-container {
     width: calc(100vw - 20px);
-    background-image: url("../images/navbar.jpg");
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     padding: 10px;
-    border-bottom: 1px solid var(--silver);
     position: fixed;
     top: 0;
-    z-index: 5;
-  }
-
-  .navbar-logo {
-    height: 100%;
   }
 
   .navbar-logo > img {
-    width: auto;
     height: 150px;
   }
 
   .navbar-links {
     visibility: visible;
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    font-size: 14px;
-    letter-spacing: 1px;
-    margin-left: none;
-    padding-left: none;
   }
 
   .navbar-links > a {
-    color: var(--white);
     margin: 0 15px;
     margin-top: 1%;
     text-decoration: none;
   }
 
-  .navbar-links > a:hover {
-    color: var(--silver);
-    border-bottom: 2px solid var(--dark-brown);
-  }
-
   .navbar-contact-number {
-    font-size: 24px;
-    text-decoration: none;
-    color: var(--white);
-    background-color: black;
     padding: 18px 50px;
-    border-radius: 20px;
-  }
-
-  .navbar-contact-number:hover {
-    border: 1px solid black;
-    color: black;
-    background-color: var(--white);
   }
 
   .navbar-menu-icon {
     visibility: hidden;
-    width: 25px;
-    height: 25px;
-    position: fixed;
-    top: 5px;
-    right: 5px;
-    cursor: pointer;
   }
 }
