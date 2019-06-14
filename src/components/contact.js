@@ -54,7 +54,7 @@ export default class Contact extends Component {
   // invokes Email.js's send function upon handling form submission
   submitMessage(templateId, senderName, senderEmail, senderMessage) {
     window.emailjs
-      .send('ach_mailgun', templateId, {
+      .send('mailgun', templateId, {
         senderName,
         senderEmail,
         senderMessage
