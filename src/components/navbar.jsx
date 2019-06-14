@@ -7,11 +7,9 @@ class Navbar extends React.Component {
     this.state = {
       toggled: false
     };
-
-    this.toggleLinks = this.toggleLinks.bind(this);
   }
 
-  toggleLinks() {
+  toggleLinks = () => {
     if (this.state.toggled) {
       document.getElementById("toggle-navbar-links").className = "navbar-links";
       this.setState({ toggled: false });

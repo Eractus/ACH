@@ -7,30 +7,6 @@ class Gallery extends React.Component {
   }
 
   render() {
-
-    const photoURLs = [
-      "./images/chair2.jpg",
-      "./images/cutting1.jpg",
-      "./images/cutting3.jpg",
-      "./images/product2.jpg",
-      "./images/plant1.jpg",
-      "./images/cutting2.jpg",
-      "./images/plant2.jpg",
-      "./images/chair1.jpg",
-      "./images/product1.jpg"
-    ];
-
-    const photos = [];
-
-    photoURLs.forEach((photoURL, index) => {
-      photos.push(
-        <Photo
-          key={index}
-          photo={photoURL}
-        />
-      )
-    });
-
     return (
       <div className="gallery-container">
         <header className="header darken-overlay">
@@ -38,12 +14,28 @@ class Gallery extends React.Component {
         </header>
         <main className="gallery-main-wrapper">
           <div className="gallery-photos-list">
-            {photos}
+            {this.props.photoURLs.map((photoURL, index) => (
+              <Photo key={index} photo={photoURL} />
+            ))}
           </div>
         </main>
       </div>
     )
   }
+}
+
+Gallery.defaultProps = {
+  photoURLs: [
+    "./images/chair2.jpg",
+    "./images/cutting1.jpg",
+    "./images/cutting3.jpg",
+    "./images/product2.jpg",
+    "./images/plant1.jpg",
+    "./images/cutting2.jpg",
+    "./images/plant2.jpg",
+    "./images/chair1.jpg",
+    "./images/product1.jpg"
+  ]
 }
 
 export default Gallery;

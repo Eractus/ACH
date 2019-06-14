@@ -5,16 +5,14 @@ class Photo extends React.Component {
     super(props)
     this.state = { displayPhoto: false }
 
-    this.openPhotoPopup = this.openPhotoPopup.bind(this);
-    this.closePhotoPopup = this.closePhotoPopup.bind(this);
   }
 
-  openPhotoPopup() {
+  openPhotoPopup = () => {
     this.setState({ displayPhoto: true });
     document.body.style.overflow = "hidden";
   }
 
-  closePhotoPopup() {
+  closePhotoPopup = () => {
     this.setState({ displayPhoto: false });
     document.body.style.overflow = "auto";
   }

@@ -12,17 +12,17 @@ export default class Contact extends Component {
 
   contactRef = React.createRef();
 
-  handleSubmit = this.handleSubmit.bind(this);
-  update = this.update.bind(this);
-  closeConfirmationModal = this.closeConfirmationModal.bind(this);
-
   componentDidMount() {
     this.contactRef.current.focus();
     const container = document.querySelector(".contact-container");
     container.scrollIntoView();
   }
 
-  handleSubmit(e) {
+  update = (field) => {
+    return (e) => this.setState({ [field]: e.currentTarget.value });
+  }
+
+  handleSubmit = (e) => {
     e.preventDefault();
 
     const templateID = "reply_to_form_submission";
@@ -47,10 +47,6 @@ export default class Contact extends Component {
     }
   }
 
-  update(field) {
-    return (e) => this.setState({ [field]: e.currentTarget.value });
-  }
-
   // invokes Email.js's send function upon handling form submission
   submitMessage(templateId, senderName, senderEmail, senderMessage) {
     window.emailjs
@@ -71,7 +67,7 @@ export default class Contact extends Component {
   }
 
   // clear all the fields after closing the confirmation modal
-  closeConfirmationModal() {
+  closeConfirmationModal = () => {
     this.setState({
       senderName: '',
       senderEmail: '',
