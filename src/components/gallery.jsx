@@ -2,20 +2,73 @@ import React from "react";
 import Photo from "./photo";
 
 class Gallery extends React.Component {
+  constructor() {
+    super()
+
+    this.state = {
+      displayBlowup: false,
+      currPhoto: null
+    }
+  }
+
   componentDidMount() {
     window.scrollTo(0, 0);
   }
 
+  openPhotoPopup = (index) => {
+    this.setState({ displayBlowup: true, currPhoto: index });
+    document.body.style.overflow = "hidden";
+  }
+
+  closePhotoPopup = () => {
+    this.setState({ displayBlowup: false, currPhoto: null });
+    document.body.style.overflow = "auto";
+  }
+
+  swipePhoto = (dir) => {
+    let totalPhotos = this.props.photoURLs.length;
+    let index = this.state.currPhoto;
+    if (dir === "left") {
+      if (index === 0) {
+        index = totalPhotos - 1;
+      } else {
+        index -= 1;
+      }
+    } else if (dir === "right") {
+      if (index === totalPhotos - 1) {
+        index = 0
+      } else {
+        index += 1;
+      }
+    }
+    this.setState({ currPhoto: index });
+  }
+
   render() {
+    const photoPopup = (this.state.displayBlowup) ?
+    <div className="modal-overlay">
+      <p onClick={() => this.swipePhoto("left")}>&lsaquo;</p>
+      <div className="photo-image-popup">
+        <img alt="Blowup" src={this.props.photoURLs[this.state.currPhoto]} />
+        <span onClick={this.closePhotoPopup}></span>
+      </div>
+      <p onClick={() => this.swipePhoto("right")}>&rsaquo;</p>
+    </div> : "";
+
     return (
       <div className="gallery-container">
+        {photoPopup}
         <header className="header darken-overlay">
           <p>GALLERY</p>
         </header>
         <main className="gallery-main-wrapper">
           <div className="gallery-photos-list">
             {this.props.photoURLs.map((photoURL, index) => (
-              <Photo key={index} photo={photoURL} />
+              <Photo
+                key={index}
+                photo={photoURL}
+                open={() => this.openPhotoPopup(index)}
+              />
             ))}
           </div>
         </main>
