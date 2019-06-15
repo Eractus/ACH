@@ -1,5 +1,4 @@
 import React from "react";
-import Photo from "./photo";
 
 class Gallery extends React.Component {
   constructor() {
@@ -64,7 +63,7 @@ class Gallery extends React.Component {
         <main className="gallery-main-wrapper">
           <div className="gallery-photos-list">
             {this.props.photoURLs.map((photoURL, index) => (
-              <Photo
+              <GalleryPhoto
                 key={index}
                 photo={photoURL}
                 open={() => this.openPhotoPopup(index)}
@@ -89,6 +88,17 @@ Gallery.defaultProps = {
     "./images/chair1.jpg",
     "./images/product1.jpg"
   ]
+}
+
+const GalleryPhoto = (props) => {
+  return (
+    <div>
+      <span onClick={props.open} className="photo-image">
+        <div className="photo-overlay"></div>
+        <img alt="Preview" src={props.photo} />
+      </span>
+    </div>
+  );
 }
 
 export default Gallery;
