@@ -1,5 +1,6 @@
 .gallery-container {
   flex: 1 0 auto;
+  position: relative;
 }
 
 .gallery-main-wrapper {
@@ -20,10 +21,33 @@
   overflow: hidden;
 }
 
+.gallery-swipe-arrow {
+  color: var(--light-gray);
+  font-size: 75px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.gallery-swipe-arrow:hover {
+  color: var(--background-black);
+}
+
+.gallery-swipe-arrow.left {
+  left: 2vw;
+}
+
+.gallery-swipe-arrow.right {
+  right: 2vw;
+}
+
 @media only screen and (min-width: 600px) {
   .gallery-photos-list > div {
     width: 25%;
     height: 250px;
+  }
+
+  .gallery-swipe-arrow {
+    font-size: 100px;
   }
 }
 
@@ -34,5 +58,9 @@
 
   .gallery-photos-list > div {
     height: 450px;
+  }
+
+  .gallery-swipe-arrow {
+    font-size: 150px;
   }
 }

@@ -47,12 +47,12 @@ class Gallery extends React.Component {
   render() {
     const photoPopup = (this.state.displayBlowup) ?
     <div className="modal-overlay">
-      <p onClick={() => this.swipePhoto("left")}>&lsaquo;</p>
+      <span className="gallery-swipe-arrow left" onClick={() => this.swipePhoto("left")}>&lsaquo;</span>
       <div className="photo-image-popup">
         <img alt="Blowup" src={this.props.photoURLs[this.state.currPhoto]} />
         <span onClick={this.closePhotoPopup}></span>
       </div>
-      <p onClick={() => this.swipePhoto("right")}>&rsaquo;</p>
+      <span className="gallery-swipe-arrow right" onClick={() => this.swipePhoto("right")}>&rsaquo;</span>
     </div> : "";
 
     return (
