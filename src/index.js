@@ -11,6 +11,7 @@ import './css/gallery.css';
 import './css/photo.css';
 import './css/reviews.css';
 import './css/contact.css';
+import './css/notFound.css'
 import './css/footer.css';
 
 import App from './App';

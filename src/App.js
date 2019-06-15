@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Redirect, Switch} from 'react-router-dom';
+import { Route, Switch} from 'react-router-dom';
 import Navbar from "./components/navbar";
 import Splash from "./components/splash";
 import BookAppointment from "./components/book";
@@ -7,6 +7,7 @@ import Services from "./components/services";
 import Gallery from "./components/gallery";
 import Reviews from "./components/reviews";
 import Contact from "./components/contact";
+import NotFound from "./components/notFound";
 import Footer from "./components/footer";
 
 class App extends Component {
@@ -21,7 +22,7 @@ class App extends Component {
           <Route path="/reviews" component={Reviews} />
           <Route path="/contact" component={Contact} />
           <Route exact path="/" component={Splash} />
-          <Redirect to="/" />
+          <Route to="/" component={NotFound}/>
         </Switch>
         <Footer />
       </div>
