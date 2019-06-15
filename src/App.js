@@ -20,7 +20,7 @@ class App extends Component {
           <Route path="/gallery" component={Gallery} />
           <Route path="/reviews" component={Reviews} />
           <Route path="/contact" component={Contact} />
-          <Route path="/" component={Splash} />
+          <Route exact path="/" component={Splash} />
           <Redirect to="/" />
         </Switch>
         <Footer />
