@@ -86,7 +86,8 @@ Gallery.defaultProps = {
     "./images/cutting2.jpg",
     "./images/plant2.jpg",
     "./images/chair1.jpg",
-    "./images/product1.jpg"
+    "./images/product1.jpg",
+    "./images/team.jpg"
   ]
 }
 

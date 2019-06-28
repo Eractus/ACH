@@ -59,7 +59,7 @@ class BookAppointment extends React.Component {
     } else {
       return (
         <div className="team-container">
-          <header className="header darken-overlay">
+          <header className="header booking darken-overlay">
             <p>BOOK APPOINTMENT</p>
           </header>
           <main className="team-main-wrapper">

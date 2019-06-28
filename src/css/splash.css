@@ -82,7 +82,7 @@ body {
 
 .splash-photostream-images span:nth-child(1) {
   animation-delay: 0s;
-  background-image: url("../images/photostream1.jpg");
+  background-image: url("../images/team.jpg");
 }
 
 .splash-photostream-images span:nth-child(2) {
@@ -109,7 +109,7 @@ body {
 }
 
 .splash-photostream-images span:nth-child(6) {
-  background-position: 30% 50%;
+  background-position: 60% 50%;
   animation-delay: 25s;
   background-image: url("../images/photostream6.jpg");
 }
@@ -148,7 +148,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../images/photostream2.jpg");
+  background-image: url("../images/services.jpg");
   background-position: 30% 15%;
 }
 
@@ -288,16 +288,20 @@ body {
     background-attachment: fixed;
   }
 
-  .splash-photostream-images span:nth-child(3) {
-    background-position: 0% 0%;
+  .splash-photostream-images span:nth-child(1) {
+    background-position: 0% -40%;
   }
 
-  .splash-photostream-images span:nth-child(4) {
+  .splash-photostream-images span:nth-child(3) {
+    background-position: 50% 50%;
+  }
+
+  .splash-photostream-images span:nth-child(5) {
     background-position: 0% 0%;
   }
 
   .splash-photostream-images span:nth-child(6) {
-    background-position: 50% 50%;
+    background-position: 0% 0%;
   }
 
   .splash-about-us > article {

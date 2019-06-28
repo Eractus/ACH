@@ -15,6 +15,12 @@
   flex: 1 0 auto;
 }
 
+/* specific header image and alignment for booking page */
+.header.booking {
+  background-image: url("../images/team.jpg");
+  background-position: 15% 15%;
+}
+
 .team-main-wrapper {
   display: flex;
   flex-direction: column;
