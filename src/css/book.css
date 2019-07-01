@@ -1,3 +1,49 @@
+/* header shared across all pages except splash */
+.header {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 225px;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid var(--silver);
+}
+
+.header > p {
+  margin: 0;
+  color: var(--white);
+  font-size: 25px;
+  text-shadow: 2px 2px 4px black;
+  z-index: 2;
+  position: absolute;
+  left: 35px;
+  bottom: 25px;
+}
+
+@media only screen and (min-width: 600px) {
+  .header {
+    height: 300px;
+  }
+
+  .header > p {
+    font-size: 30px;
+    left: 45px;
+    bottom: 55px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header {
+    height: 450px;
+  }
+
+  .header > p {
+    font-size: 45px;
+    left: 75px;
+    bottom: 88px;
+  }
+}
+
 .team-container h1, h3, h4, h5 {
   margin-top: 0;
   font-weight: 300;

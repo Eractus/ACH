@@ -1,29 +1,24 @@
 import React from "react";
+import '../css/reviews.css';
 
-class Reviews extends React.Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
-
-  render() {
-    return (
-      <div className="reviews-container">
-        <header className="header darken-overlay">
-          <p>REVIEWS</p>
-        </header>
-        <main className="reviews-main-wrapper">
-          <section className="reviews-section-wrapper">
-            <h3>Here's Some Love We've Received on Social Media - We Appreciate It!</h3>
-            <ul className="reviews-list">
-              {this.props.reviews.map((review, index) => (
-                <Review key={index} review={review} />
-              ))}
-            </ul>
-          </section>
-        </main>
-      </div>
-    )
-  }
+const Reviews = (props) => {
+  return (
+    <div className="reviews-container">
+      <header className="header darken-overlay">
+        <p>REVIEWS</p>
+      </header>
+      <main className="reviews-main-wrapper">
+        <section className="reviews-section-wrapper">
+          <h3>Here's Some Love We've Received on Social Media - We Appreciate It!</h3>
+          <ul className="reviews-list">
+            {props.reviews.map((review, index) => (
+              <Review key={index} review={review} />
+            ))}
+          </ul>
+        </section>
+      </main>
+    </div>
+  )
 }
 
 Reviews.defaultProps = {

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Photo from "./photo";
+import '../css/splash.css';
 
 class Splash extends React.Component {
   componentDidMount() {
