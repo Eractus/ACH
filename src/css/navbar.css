@@ -44,7 +44,7 @@
   border-bottom: 2px solid var(--dark-brown);
 }
 
-.show-navbar-links {
+.navbar-links.show {
   visibility: visible;
   width: auto;
   height: auto;

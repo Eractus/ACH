@@ -12,12 +12,11 @@ class Navbar extends React.Component {
 
   toggleLinks = () => {
     if (this.state.toggled) {
-      document.getElementById("toggle-navbar-links").className = "navbar-links";
-      this.setState({ toggled: false });
+      document.querySelector(".navbar-links").className = "navbar-links";
     } else {
-      document.getElementById("toggle-navbar-links").className += " show-navbar-links";
-      this.setState({ toggled: true })
+      document.querySelector(".navbar-links").className += " show";
     }
+    this.setState({ toggled: !this.state.toggled });
   }
 
   render() {
@@ -30,7 +29,7 @@ class Navbar extends React.Component {
         <Link className="navbar-logo" to="/">
           <img src="./images/ACH-decal.png" alt="ACH Decal Logo"/>
         </Link>
-        <div id="toggle-navbar-links" className="navbar-links">
+        <div className="navbar-links">
           <Link onClick={this.toggleLinks} to="/">HOME</Link>
           <Link onClick={this.toggleLinks} to="/book">BOOK APPOINTMENT</Link>
           <Link onClick={this.toggleLinks} to="/services">SERVICES</Link>
