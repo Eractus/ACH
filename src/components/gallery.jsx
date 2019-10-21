@@ -79,15 +79,21 @@ class Gallery extends React.Component {
 
 Gallery.defaultProps = {
   photoURLs: [
-    "./images/chair2.jpg",
-    "./images/cutting1.jpg",
-    "./images/cutting3.jpg",
-    "./images/product2.jpg",
-    "./images/plant1.jpg",
-    "./images/cutting2.jpg",
-    "./images/plant2.jpg",
+    "./images/shop1.jpg",
+    "./images/shop2.jpg",
     "./images/chair1.jpg",
+    "./images/chair2.jpg",
+    "./images/plant1.jpg",
     "./images/product1.jpg",
+    "./images/product2.jpg",
+    "./images/product3.jpg",
+    "./images/plant2.jpg",
+    "./images/cutting1.jpg",
+    "./images/cutting2.jpg",
+    "./images/cutting3.jpg",
+    "./images/cutting4.jpg",
+    "./images/cutting5.jpg",
+    "./images/cutting6.jpg",
     "./images/team.jpg"
   ]
 }
