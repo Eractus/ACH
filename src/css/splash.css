@@ -81,6 +81,7 @@ body {
 }
 
 .splash-photostream-images span:nth-child(1) {
+  background-position: 60% 50%;
   animation-delay: 0s;
   background-image: url("../images/team.jpg");
 }
@@ -285,7 +286,7 @@ body {
   .splash-photostream-images > span {
     width: 100vw;
     height: 100vh;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
 
   .splash-photostream-images span:nth-child(1) {
@@ -328,7 +329,7 @@ body {
   .splash-services {
     background-position: 0% 0%;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
 
   .splash-services > p {
@@ -363,7 +364,7 @@ body {
   }
 
   .splash-reviews {
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
 
   .splash-reviews-text > h3 {

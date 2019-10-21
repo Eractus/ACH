@@ -100,6 +100,14 @@ BookAppointment.defaultProps = {
       profileURL: "https://www.instagram.com/p/Bt9D0TIg3DH/"
     },
     {
+      firstName: "Jen",
+      lastName: "Arambula",
+      number: "(714) 914-5137",
+      specialty: "Cut, Vivid Colors, Color Corrections",
+      bio: `Jen brings a tremendous amount of industry experience to the team as a Keratin Complex industry educator, a Redken certified specialist and complete hair wiz! You can rest easy knowing that your hair, color, and style are in experienced hands.`,
+      profileURL: "https://www.instagram.com/p/B1XV6QgAP3U/"
+    },
+    {
       firstName: "Juliet",
       lastName: "Rodriguez",
       number: "(425) 232-0519",
@@ -117,28 +125,6 @@ BookAppointment.defaultProps = {
       you there in a comfortable manner. His customer first approach makes him a staple for our men’s
       clientele and you can rest assured that you’re in good hands with Ryan.`,
       profileURL: "https://www.instagram.com/p/BuXyY8KHPfX/"
-    },
-    {
-      firstName: "Michelle",
-      lastName: "Connelly",
-      number: "(562) 472-5043",
-      specialty: "Vivid Colors and Color Corrections",
-      bio: `Michelle has been coloring her friends hair since before she was a teenager. What sparked as a
-      childhood joy has quickly become her career cornerstone. She enjoys working with complex, vivid colors
-      and is at her best when pushing boundaries. Let Michelle bring your hair to life and work alongside your
-      creative vision today!`,
-      profileURL: "https://www.instagram.com/p/BuK9Y46A987/"
-    },
-    {
-      firstName: "Maria",
-      lastName: "Moreno",
-      number: "(714) 472-5473",
-      specialty: "Precision Haircuts, Vivid Colors, and Color Corrections",
-      bio: `Maria has been a professional cosmetologist for over 6 years and specializes in coloring and
-      precision cuts. Never a stranger to working long hours, you’ll often find her going the extra mile to
-      ensure you’re happy and satisfied with your look! She has industry experience with just about every
-      coloring product available, and her years of experience will help narrow down the right color for you!`,
-      profileURL: "https://www.instagram.com/p/BlrHAfYnMOu/"
     },
     {
       firstName: "Clarissa",
