@@ -133,6 +133,22 @@ BookAppointment.defaultProps = {
       specialty: "Blonding and Keratin Treatments, Balayage, Highlights/Ombré, Babylights,Traditional Highlights",
       bio: `Clarissa has been in the industry for nearly a decade - and her certifications from industry experts such as Schwartzlkopf, Redken, Oribe, R+Co, The Kingly Hair Group, and Keratin Complex are only a few of the many companies that Clarissa has trained under. Feel confident knowing your hair is in the best hands as Clarissa continually invests in herself to to offer the consistent, beautiful results you need to get your perfect look!`,
       profileURL: "https://www.instagram.com/p/BwyZfDgnMPf/"
+    },
+    {
+      firstName: "Sara",
+      lastName: "Praefke",
+      number: "(262) 853-7636",
+      specialty: "Precision Cuts (Pixies!), Blonding",
+      bio: `Sara is known for her warm personality, attention to detail, and commitment to ensuring you feel beautiful and confident leaving her chair. She carries over 6 years of industry experience and is very well known for her pixie cuts. Sara works in Wisconsin and is in OC on rare occasion - so be sure to book in advance to get the look you want as days are limited!`,
+      profileURL: "https://www.instagram.com/p/B3-BVtaH7hD/"
+    },
+    {
+      firstName: "Lisa",
+      lastName: "Nguyen",
+      number: "(949) 319 4102",
+      specialty: "Color Corrections, Balayage, Braiding, Blonding",
+      bio: `Lisa is one of the few on our team who have actually grown up in the hair industry! She helped her mom open a salon in her younger days and has since branched out and grown into an independent stylist. Lisa stuns us regularly with her work - and her color corrections are impeccable. `,
+      profileURL: "https://www.instagram.com/p/B24oR20BgqF/"
     }
   ]
 }
